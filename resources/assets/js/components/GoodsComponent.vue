@@ -1,6 +1,11 @@
 <template>
-    <div class="container">
-        <v-layout row>
+    <div
+            class="container"
+            id="item-1"
+    >
+        <v-layout
+                row
+        >
             <v-flex xs12 sm12 md6 class="goodsPadding" v-for="n in 6">
                 <v-card>
                     <v-img

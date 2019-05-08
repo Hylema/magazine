@@ -1894,6 +1894,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1995,35 +2000,89 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      drawer: false
+      drawer: false,
+      openBasketGoods: false
     };
   },
   computed: {
     menuItems: function menuItems() {
       return [{
-        icon: 'visibility',
-        title: 'Слово',
-        text: [{
-          title: 'Работа',
-          route: '/work'
-        }, {
-          title: 'Пользователи',
-          route: '/infoAboutUsers'
-        }]
+        icon: 'shopping_basket',
+        title: 'Товары',
+        route: '/#item-1'
       }, {
-        icon: 'extension',
-        title: 'Слово',
-        text: [{
-          title: 'Click Учить слова'
-        }, {
-          title: 'Click Учить слова'
-        }, {
-          title: 'Click Учить слова'
-        }]
+        icon: 'info',
+        title: 'Информация',
+        route: '/#item-3'
+      }, {
+        icon: 'shop',
+        title: 'Корзина',
+        route: '/#item-3'
       }];
+    }
+  },
+  methods: {
+    openBasket: function openBasket() {
+      this.openBasketGoods = true;
     }
   }
 });
@@ -2102,6 +2161,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -38346,7 +38406,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
+    { staticClass: "container", attrs: { id: "item-1" } },
     [
       _c(
         "v-layout",
@@ -38619,44 +38679,137 @@ var render = function() {
               return _c(
                 "v-menu",
                 [
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "header",
-                      attrs: { slot: "activator", flat: "" },
-                      slot: "activator"
-                    },
-                    [
-                      _c("v-icon", {
-                        attrs: { left: "" },
-                        domProps: { innerHTML: _vm._s(item.icon) }
-                      }),
-                      _vm._v(
-                        "\n                        " +
-                          _vm._s(item.title) +
-                          "\n                    "
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list",
-                    { staticClass: "fixNavBar" },
-                    _vm._l(item.text, function(text) {
-                      return _c(
-                        "v-list-tile",
-                        { attrs: { to: text.route } },
-                        [_c("v-list-tile-title", [_vm._v(_vm._s(text.title))])],
+                  item.icon !== "shop"
+                    ? _c(
+                        "v-btn",
+                        {
+                          attrs: { slot: "activator", href: item.route },
+                          slot: "activator"
+                        },
+                        [
+                          _c("v-icon", {
+                            attrs: { left: "" },
+                            domProps: { innerHTML: _vm._s(item.icon) }
+                          }),
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(item.title) +
+                              "\n                    "
+                          )
+                        ],
                         1
                       )
-                    }),
+                    : _c(
+                        "v-btn",
+                        {
+                          attrs: { slot: "activator" },
+                          on: {
+                            click: function($event) {
+                              return _vm.openBasket()
+                            }
+                          },
+                          slot: "activator"
+                        },
+                        [
+                          _c(
+                            "v-badge",
+                            { attrs: { color: "cyan", left: "" } },
+                            [
+                              [_c("span", [_vm._v("0")])],
+                              _vm._v(" "),
+                              _c(
+                                "v-icon",
+                                {
+                                  attrs: { large: "", color: "grey lighten-1" }
+                                },
+                                [_vm._v("shopping_cart")]
+                              )
+                            ],
+                            2
+                          ),
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(item.title) +
+                              "\n                    "
+                          )
+                        ],
+                        1
+                      )
+                ],
+                1
+              )
+            }),
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "text-xs-center" },
+        [
+          _c(
+            "v-dialog",
+            {
+              attrs: { width: "1000" },
+              model: {
+                value: _vm.openBasketGoods,
+                callback: function($$v) {
+                  _vm.openBasketGoods = $$v
+                },
+                expression: "openBasketGoods"
+              }
+            },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-card-title",
+                    {
+                      staticClass: "headline grey lighten-2",
+                      attrs: { "primary-title": "" }
+                    },
+                    [_vm._v("\n                    Корзина\n                ")]
+                  ),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _vm._v(
+                      "\n                    Тут будут храниться товары пользователя\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("v-divider"),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-actions",
+                    [
+                      _c("v-spacer"),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { color: "primary", flat: "" },
+                          on: {
+                            click: function($event) {
+                              _vm.openBasketGoods = false
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                        Выход\n                    "
+                          )
+                        ]
+                      )
+                    ],
                     1
                   )
                 ],
                 1
               )
-            }),
+            ],
             1
           )
         ],
@@ -38972,7 +39125,8 @@ var render = function() {
           staticClass: "parallaxHeight",
           attrs: {
             dark: "",
-            src: "https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+            src: "https://cdn.vuetifyjs.com/images/parallax/material2.jpg",
+            id: "item-3"
           }
         },
         [
@@ -80259,7 +80413,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _views_Hello__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/Hello */ "./resources/assets/js/views/Hello.vue");
 /* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/Home */ "./resources/assets/js/views/Home.vue");
-/* harmony import */ var _views_Error_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./views/Error.vue */ "./resources/assets/js/views/Error.vue");
+/* harmony import */ var _views_Error_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./views/Error.vue */ "./resources/assets/js/views/Error.vue");
 
 
 
@@ -80279,7 +80433,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: '/error',
     name: 'error',
-    component: _views_Error_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: _views_Error_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
   }, {
     path: '*',
     redirect: '/error'

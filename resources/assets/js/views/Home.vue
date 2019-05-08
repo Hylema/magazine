@@ -53,6 +53,7 @@
                 dark
                 src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
                 class="parallaxHeight"
+                id="item-3"
         >
             <div class="container">
                 <v-timeline>

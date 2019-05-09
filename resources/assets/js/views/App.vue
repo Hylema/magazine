@@ -1,8 +1,11 @@
 <template>
     <v-app>
-        <header-component></header-component>
-        <carousel-component v-if="route"></carousel-component>
-            <v-content>
+        <header-component
+            class="header"
+        ></header-component>
+            <v-content
+                class="content"
+            >
                 <router-view></router-view>
             </v-content>
         <footer-component></footer-component>
@@ -12,18 +15,14 @@
     export default {
         data () {
             return {
-                route: false,
+
             }
         },
         mounted() {
-            this.checkRoute();
+
         },
         methods: {
-            checkRoute(){
-                if(document.location.pathname === '/'){
-                    this.route = true;
-                }
-            }
+
         }
     }
 </script>
@@ -37,5 +36,11 @@
     .v-menu__content{
         top:65px !important;
     }
+    @media (max-width: 960px) {
+        .content{
+
+        }
+    }
+
 </style>
 

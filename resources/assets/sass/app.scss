@@ -10,6 +10,10 @@
 // Vuetify
 @import '~vuetify/dist/vuetify.css';
 
+//Заголовки
+@import "https://fonts.googleapis.com/css?family=Russo+One";
+@import '../../../public/css/h2.css';
+
 .navbar-laravel {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);

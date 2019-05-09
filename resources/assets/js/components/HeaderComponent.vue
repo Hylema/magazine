@@ -47,7 +47,7 @@
         <v-toolbar fixed>
             <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
             <router-link to="/" tag="span" style="cursor:pointer">
-                <v-toolbar-title v-text="'Vuetify'"></v-toolbar-title>
+                <v-toolbar-title v-text="'LAMZAK'"></v-toolbar-title>
             </router-link>
 
             <v-spacer></v-spacer>
@@ -55,11 +55,13 @@
             <v-toolbar-items class="hidden-sm-and-down">
                     <v-menu
                             v-for="(item) in menuItems"
+                            id="menu"
                     >
                         <v-btn
+                                v-bind:data-menuanchor="item.route"
                                 v-if="item.icon !== 'shop'"
                                 slot="activator"
-                                v-bind:href="item.route"
+                                v-bind:href="'/#' + item.route"
                         >
                                 <v-icon left v-html="item.icon"></v-icon>
                                 {{ item.title }}
@@ -100,38 +102,85 @@
 
 
 
-        <div class="text-xs-center">
-            <v-dialog
+        <!--<div class="text-xs-center">-->
+            <!--<v-dialog-->
+                    <!--v-model="openBasketGoods"-->
+                    <!--width="1000"-->
+            <!--&gt;-->
+                <!--<v-card>-->
+                    <!--<v-card-title-->
+                            <!--class="headline grey lighten-2"-->
+                            <!--primary-title-->
+                    <!--&gt;-->
+                        <!--Корзина-->
+                    <!--</v-card-title>-->
+
+                    <!--<v-card-text>-->
+                        <!--Тут будут храниться товары пользователя-->
+                    <!--</v-card-text>-->
+
+                    <!--<v-divider></v-divider>-->
+
+                    <!--<v-card-actions>-->
+                        <!--<v-spacer></v-spacer>-->
+                        <!--<v-btn-->
+                                <!--color="primary"-->
+                                <!--flat-->
+                                <!--@click="openBasketGoods = false"-->
+                        <!--&gt;-->
+                            <!--Выход-->
+                        <!--</v-btn>-->
+                    <!--</v-card-actions>-->
+                <!--</v-card>-->
+            <!--</v-dialog>-->
+        <!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <v-layout
+                wrap
+        >
+            <v-navigation-drawer
                     v-model="openBasketGoods"
-                    width="1000"
+                    :mini-variant="mini"
+                    fixed
+                    right
+                    style="top: 65px;"
             >
-                <v-card>
-                    <v-card-title
-                            class="headline grey lighten-2"
-                            primary-title
-                    >
-                        Корзина
-                    </v-card-title>
+                <v-list>
+                    <v-list-tile v-if="mini" @click.stop="mini = !mini">
+                        <v-list-tile-action>
+                            <v-icon>chevron_right</v-icon>
+                        </v-list-tile-action>
+                    </v-list-tile>
 
-                    <v-card-text>
-                        Тут будут храниться товары пользователя
-                    </v-card-text>
+                    <v-list-tile avatar tag="div">
+                        <v-list-tile-avatar>
+                            <img src="https://randomuser.me/api/portraits/men/85.jpg">
+                        </v-list-tile-avatar>
 
-                    <v-divider></v-divider>
+                        <v-list-tile-content>
+                            <v-list-tile-title>John Leider</v-list-tile-title>
+                        </v-list-tile-content>
 
-                    <v-card-actions>
-                        <v-spacer></v-spacer>
-                        <v-btn
-                                color="primary"
-                                flat
-                                @click="openBasketGoods = false"
-                        >
-                            Выход
-                        </v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-dialog>
-        </div>
+                        <v-list-tile-action>
+                            <v-btn icon @click.stop="mini = !mini">
+                                <v-icon>chevron_left</v-icon>
+                            </v-btn>
+                        </v-list-tile-action>
+                    </v-list-tile>
+                </v-list>
+            </v-navigation-drawer>
+        </v-layout>
     </div>
 </template>
 
@@ -141,6 +190,7 @@
             return {
                 drawer: false,
                 openBasketGoods: false,
+                mini: false,
             }
         },
         computed: {
@@ -149,25 +199,31 @@
                     {
                         icon: 'shopping_basket',
                         title: 'Товары',
-                        route: '/#item-1'
+                        route: 'page2'
                     },
                     {
                         icon: 'info',
                         title: 'Информация',
-                        route: '/#item-3'
+                        route: 'page3'
                     },
                     {
                         icon: 'shop',
                         title: 'Корзина',
-                        route: '/#item-3'
+                        route: ''
                     },
                 ]
             },
         },
         methods: {
           openBasket(){
-              this.openBasketGoods = true;
+              this.openBasketGoods = !this.openBasketGoods;
           }
         },
     }
 </script>
+
+<style scoped>
+    #menu .active{
+        color: #41b883 !important;
+    }
+</style>

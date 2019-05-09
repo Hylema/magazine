@@ -1779,13 +1779,13 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       items: [{
-        src: 'https://christians39.ru/wp-content/uploads/2015/11/copy-2.jpg'
-      }, {
-        src: 'https://bluevisionmedia.com/content/uploads/2017/06/bluevisionmedia-panoramakamera.jpg'
+        src: 'http://www.clubalpinobarcelona.com/wp-content/uploads/2015/12/alps.jpg'
       }, {
         src: 'http://www.clubalpinobarcelona.com/wp-content/uploads/2015/12/alps.jpg'
       }, {
-        src: 'https://cdn.firespring.com/images/bbdc4755-f074-429f-a3b3-e848c11f2ec9.jpg'
+        src: 'http://www.clubalpinobarcelona.com/wp-content/uploads/2015/12/alps.jpg'
+      }, {
+        src: 'http://www.clubalpinobarcelona.com/wp-content/uploads/2015/12/alps.jpg'
       }]
     };
   }
@@ -1802,7 +1802,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -1899,11 +1898,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      drawer: false,
-      rating: 3
+      drawer: false
     };
   }
 });
@@ -2056,11 +2061,61 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       drawer: false,
-      openBasketGoods: false
+      openBasketGoods: false,
+      mini: false
     };
   },
   computed: {
@@ -2068,21 +2123,21 @@ __webpack_require__.r(__webpack_exports__);
       return [{
         icon: 'shopping_basket',
         title: 'Товары',
-        route: '/#item-1'
+        route: 'page2'
       }, {
         icon: 'info',
         title: 'Информация',
-        route: '/#item-3'
+        route: 'page3'
       }, {
         icon: 'shop',
         title: 'Корзина',
-        route: '/#item-3'
+        route: ''
       }];
     }
   },
   methods: {
     openBasket: function openBasket() {
-      this.openBasketGoods = true;
+      this.openBasketGoods = !this.openBasketGoods;
     }
   }
 });
@@ -2108,22 +2163,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
-    return {
-      route: false
-    };
+    return {};
   },
-  mounted: function mounted() {
-    this.checkRoute();
-  },
-  methods: {
-    checkRoute: function checkRoute() {
-      if (document.location.pathname === '/') {
-        this.route = true;
-      }
-    }
-  }
+  mounted: function mounted() {},
+  methods: {}
 });
 
 /***/ }),
@@ -2187,70 +2235,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      lorem: "Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos."
+      options: {
+        navigation: true,
+        anchors: ['page1', 'page2', 'page3'],
+        navigationPosition: 'right',
+        sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab'],
+        menu: '#menu',
+        scrollOverflow: true
+      }
     };
-  }
+  },
+  mounted: function mounted() {},
+  methods: {}
 });
 
 /***/ }),
@@ -6715,6 +6714,21 @@ exports.push([module.i, "\n.goodsPadding[data-v-d2485e84]{\n    padding: 10px;\n
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "\n#menu .active[data-v-2810fc09]{\n    color: #41b883 !important;\n}\n", ""]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/views/App.vue?vue&type=style&index=0&lang=css&":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/views/App.vue?vue&type=style&index=0&lang=css& ***!
@@ -6724,7 +6738,7 @@ exports.push([module.i, "\n.goodsPadding[data-v-d2485e84]{\n    padding: 10px;\n
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n.v-btn:active{\n    outline: none !important;\n}\na:hover{\n    text-decoration: none !important;\n}\n.v-menu__content{\n    top:65px !important;\n}\n", ""]);
+exports.push([module.i, "\n.v-btn:active{\n    outline: none !important;\n}\na:hover{\n    text-decoration: none !important;\n}\n.v-menu__content{\n    top:65px !important;\n}\n@media (max-width: 960px) {\n.content{\n}\n}\n\n", ""]);
 
 
 
@@ -6739,7 +6753,7 @@ exports.push([module.i, "\n.v-btn:active{\n    outline: none !important;\n}\na:h
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n.parallaxHeight[data-v-6c0a33b2]{\n    height: 400px !important;\n}\n@media (max-width: 767px) {\n.parallaxHeight[data-v-6c0a33b2]{\n        height: 600px !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n#menu[data-v-6c0a33b2]{\n    position: absolute;\n    left: 0px;\n    top: 200px;\n    z-index: 1000;\n}\n.section[data-v-6c0a33b2]{\n    background-size: cover;\n    width: 100%;\n}\n.parallaxHeight[data-v-6c0a33b2]{\n    height: 400px !important;\n}\n@media (max-width: 767px) {\n.parallaxHeight[data-v-6c0a33b2]{\n        height: 600px !important;\n}\n}\n", ""]);
 
 
 
@@ -6838,6 +6852,2584 @@ function toComment(sourceMap) {
   var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
   return '/*# ' + data + ' */';
 }
+
+/***/ }),
+
+/***/ "./node_modules/fullpage.js/vendors/scrolloverflow.js":
+/*!************************************************************!*\
+  !*** ./node_modules/fullpage.js/vendors/scrolloverflow.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/**
+* Customized version of iScroll.js 0.1.2
+* It fixes bugs affecting its integration with fullpage.js
+* @license
+*/
+/*! iScroll v5.2.0 ~ (c) 2008-2016 Matteo Spinelli ~ http://cubiq.org/license */
+(function (window, document, Math) {
+var rAF = window.requestAnimationFrame  ||
+    window.webkitRequestAnimationFrame  ||
+    window.mozRequestAnimationFrame     ||
+    window.oRequestAnimationFrame       ||
+    window.msRequestAnimationFrame      ||
+    function (callback) { window.setTimeout(callback, 1000 / 60); };
+
+var utils = (function () {
+    var me = {};
+
+    var _elementStyle = document.createElement('div').style;
+    var _vendor = (function () {
+        var vendors = ['t', 'webkitT', 'MozT', 'msT', 'OT'],
+            transform,
+            i = 0,
+            l = vendors.length;
+
+        for ( ; i < l; i++ ) {
+            transform = vendors[i] + 'ransform';
+            if ( transform in _elementStyle ) return vendors[i].substr(0, vendors[i].length-1);
+        }
+
+        return false;
+    })();
+
+    function _prefixStyle (style) {
+        if ( _vendor === false ) return false;
+        if ( _vendor === '' ) return style;
+        return _vendor + style.charAt(0).toUpperCase() + style.substr(1);
+    }
+
+    me.getTime = Date.now || function getTime () { return new Date().getTime(); };
+
+    me.extend = function (target, obj) {
+        for ( var i in obj ) {
+            target[i] = obj[i];
+        }
+    };
+
+    me.addEvent = function (el, type, fn, capture) {
+        el.addEventListener(type, fn, !!capture);
+    };
+
+    me.removeEvent = function (el, type, fn, capture) {
+        el.removeEventListener(type, fn, !!capture);
+    };
+
+    me.prefixPointerEvent = function (pointerEvent) {
+        return window.MSPointerEvent ?
+            'MSPointer' + pointerEvent.charAt(7).toUpperCase() + pointerEvent.substr(8):
+            pointerEvent;
+    };
+
+    me.momentum = function (current, start, time, lowerMargin, wrapperSize, deceleration) {
+        var distance = current - start,
+            speed = Math.abs(distance) / time,
+            destination,
+            duration;
+
+        deceleration = deceleration === undefined ? 0.0006 : deceleration;
+
+        destination = current + ( speed * speed ) / ( 2 * deceleration ) * ( distance < 0 ? -1 : 1 );
+        duration = speed / deceleration;
+
+        if ( destination < lowerMargin ) {
+            destination = wrapperSize ? lowerMargin - ( wrapperSize / 2.5 * ( speed / 8 ) ) : lowerMargin;
+            distance = Math.abs(destination - current);
+            duration = distance / speed;
+        } else if ( destination > 0 ) {
+            destination = wrapperSize ? wrapperSize / 2.5 * ( speed / 8 ) : 0;
+            distance = Math.abs(current) + destination;
+            duration = distance / speed;
+        }
+
+        return {
+            destination: Math.round(destination),
+            duration: duration
+        };
+    };
+
+    var _transform = _prefixStyle('transform');
+
+    me.extend(me, {
+        hasTransform: _transform !== false,
+        hasPerspective: _prefixStyle('perspective') in _elementStyle,
+        hasTouch: 'ontouchstart' in window,
+        hasPointer: !!(window.PointerEvent || window.MSPointerEvent), // IE10 is prefixed
+        hasTransition: _prefixStyle('transition') in _elementStyle
+    });
+
+    /*
+    This should find all Android browsers lower than build 535.19 (both stock browser and webview)
+    - galaxy S2 is ok
+    - 2.3.6 : `AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
+    - 4.0.4 : `AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30`
+   - galaxy S3 is badAndroid (stock brower, webview)
+     `AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30`
+   - galaxy S4 is badAndroid (stock brower, webview)
+     `AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30`
+   - galaxy S5 is OK
+     `AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36 (Chrome/)`
+   - galaxy S6 is OK
+     `AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36 (Chrome/)`
+  */
+    me.isBadAndroid = (function() {
+        var appVersion = window.navigator.appVersion;
+        // Android browser is not a chrome browser.
+        if (/Android/.test(appVersion) && !(/Chrome\/\d/.test(appVersion))) {
+            var safariVersion = appVersion.match(/Safari\/(\d+.\d)/);
+            if(safariVersion && typeof safariVersion === "object" && safariVersion.length >= 2) {
+                return parseFloat(safariVersion[1]) < 535.19;
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    })();
+
+    me.extend(me.style = {}, {
+        transform: _transform,
+        transitionTimingFunction: _prefixStyle('transitionTimingFunction'),
+        transitionDuration: _prefixStyle('transitionDuration'),
+        transitionDelay: _prefixStyle('transitionDelay'),
+        transformOrigin: _prefixStyle('transformOrigin')
+    });
+
+    me.hasClass = function (e, c) {
+        var re = new RegExp("(^|\\s)" + c + "(\\s|$)");
+        return re.test(e.className);
+    };
+
+    me.addClass = function (e, c) {
+        if ( me.hasClass(e, c) ) {
+            return;
+        }
+
+        var newclass = e.className.split(' ');
+        newclass.push(c);
+        e.className = newclass.join(' ');
+    };
+
+    me.removeClass = function (e, c) {
+        if ( !me.hasClass(e, c) ) {
+            return;
+        }
+
+        var re = new RegExp("(^|\\s)" + c + "(\\s|$)", 'g');
+        e.className = e.className.replace(re, ' ');
+    };
+
+    me.offset = function (el) {
+        var left = -el.offsetLeft,
+            top = -el.offsetTop;
+
+        // jshint -W084
+        while (el = el.offsetParent) {
+            left -= el.offsetLeft;
+            top -= el.offsetTop;
+        }
+        // jshint +W084
+
+        return {
+            left: left,
+            top: top
+        };
+    };
+
+    me.preventDefaultException = function (el, exceptions) {
+        for ( var i in exceptions ) {
+            if ( exceptions[i].test(el[i]) ) {
+                return true;
+            }
+        }
+
+        return false;
+    };
+
+    me.extend(me.eventType = {}, {
+        touchstart: 1,
+        touchmove: 1,
+        touchend: 1,
+
+        mousedown: 2,
+        mousemove: 2,
+        mouseup: 2,
+
+        pointerdown: 3,
+        pointermove: 3,
+        pointerup: 3,
+
+        MSPointerDown: 3,
+        MSPointerMove: 3,
+        MSPointerUp: 3
+    });
+
+    me.extend(me.ease = {}, {
+        quadratic: {
+            style: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+            fn: function (k) {
+                return k * ( 2 - k );
+            }
+        },
+        circular: {
+            style: 'cubic-bezier(0.1, 0.57, 0.1, 1)',   // Not properly "circular" but this looks better, it should be (0.075, 0.82, 0.165, 1)
+            fn: function (k) {
+                return Math.sqrt( 1 - ( --k * k ) );
+            }
+        },
+        back: {
+            style: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+            fn: function (k) {
+                var b = 4;
+                return ( k = k - 1 ) * k * ( ( b + 1 ) * k + b ) + 1;
+            }
+        },
+        bounce: {
+            style: '',
+            fn: function (k) {
+                if ( ( k /= 1 ) < ( 1 / 2.75 ) ) {
+                    return 7.5625 * k * k;
+                } else if ( k < ( 2 / 2.75 ) ) {
+                    return 7.5625 * ( k -= ( 1.5 / 2.75 ) ) * k + 0.75;
+                } else if ( k < ( 2.5 / 2.75 ) ) {
+                    return 7.5625 * ( k -= ( 2.25 / 2.75 ) ) * k + 0.9375;
+                } else {
+                    return 7.5625 * ( k -= ( 2.625 / 2.75 ) ) * k + 0.984375;
+                }
+            }
+        },
+        elastic: {
+            style: '',
+            fn: function (k) {
+                var f = 0.22,
+                    e = 0.4;
+
+                if ( k === 0 ) { return 0; }
+                if ( k == 1 ) { return 1; }
+
+                return ( e * Math.pow( 2, - 10 * k ) * Math.sin( ( k - f / 4 ) * ( 2 * Math.PI ) / f ) + 1 );
+            }
+        }
+    });
+
+    me.tap = function (e, eventName) {
+        var ev = document.createEvent('Event');
+        ev.initEvent(eventName, true, true);
+        ev.pageX = e.pageX;
+        ev.pageY = e.pageY;
+        e.target.dispatchEvent(ev);
+    };
+
+    me.click = function (e) {
+        var target = e.target,
+            ev;
+
+        if ( !(/(SELECT|INPUT|TEXTAREA)/i).test(target.tagName) ) {
+            // https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/initMouseEvent
+            // initMouseEvent is deprecated.
+            ev = document.createEvent(window.MouseEvent ? 'MouseEvents' : 'Event');
+            ev.initEvent('click', true, true);
+            ev.view = e.view || window;
+            ev.detail = 1;
+            ev.screenX = target.screenX || 0;
+            ev.screenY = target.screenY || 0;
+            ev.clientX = target.clientX || 0;
+            ev.clientY = target.clientY || 0;
+            ev.ctrlKey = !!e.ctrlKey;
+            ev.altKey = !!e.altKey;
+            ev.shiftKey = !!e.shiftKey;
+            ev.metaKey = !!e.metaKey;
+            ev.button = 0;
+            ev.relatedTarget = null;
+            ev._constructed = true;
+            target.dispatchEvent(ev);
+        }
+    };
+
+    return me;
+})();
+function IScroll (el, options) {
+    this.wrapper = typeof el == 'string' ? document.querySelector(el) : el;
+    this.scroller = this.wrapper.children[0];
+    this.scrollerStyle = this.scroller.style;       // cache style for better performance
+
+    this.options = {
+
+        resizeScrollbars: true,
+
+        mouseWheelSpeed: 20,
+
+        snapThreshold: 0.334,
+
+// INSERT POINT: OPTIONS
+        disablePointer : !utils.hasPointer,
+        disableTouch : utils.hasPointer || !utils.hasTouch,
+        disableMouse : utils.hasPointer || utils.hasTouch,
+        startX: 0,
+        startY: 0,
+        scrollY: true,
+        directionLockThreshold: 5,
+        momentum: true,
+
+        bounce: true,
+        bounceTime: 600,
+        bounceEasing: '',
+
+        preventDefault: true,
+        preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|LABEL)$/ },
+
+        HWCompositing: true,
+        useTransition: true,
+        useTransform: true,
+        bindToWrapper: typeof window.onmousedown === "undefined"
+    };
+
+    for ( var i in options ) {
+        this.options[i] = options[i];
+    }
+
+    // Normalize options
+    this.translateZ = this.options.HWCompositing && utils.hasPerspective ? ' translateZ(0)' : '';
+
+    this.options.useTransition = utils.hasTransition && this.options.useTransition;
+    this.options.useTransform = utils.hasTransform && this.options.useTransform;
+
+    this.options.eventPassthrough = this.options.eventPassthrough === true ? 'vertical' : this.options.eventPassthrough;
+    this.options.preventDefault = !this.options.eventPassthrough && this.options.preventDefault;
+
+    // If you want eventPassthrough I have to lock one of the axes
+    this.options.scrollY = this.options.eventPassthrough == 'vertical' ? false : this.options.scrollY;
+    this.options.scrollX = this.options.eventPassthrough == 'horizontal' ? false : this.options.scrollX;
+
+    // With eventPassthrough we also need lockDirection mechanism
+    this.options.freeScroll = this.options.freeScroll && !this.options.eventPassthrough;
+    this.options.directionLockThreshold = this.options.eventPassthrough ? 0 : this.options.directionLockThreshold;
+
+    this.options.bounceEasing = typeof this.options.bounceEasing == 'string' ? utils.ease[this.options.bounceEasing] || utils.ease.circular : this.options.bounceEasing;
+
+    this.options.resizePolling = this.options.resizePolling === undefined ? 60 : this.options.resizePolling;
+
+    if ( this.options.tap === true ) {
+        this.options.tap = 'tap';
+    }
+
+    // https://github.com/cubiq/iscroll/issues/1029
+    if (!this.options.useTransition && !this.options.useTransform) {
+        if(!(/relative|absolute/i).test(this.scrollerStyle.position)) {
+            this.scrollerStyle.position = "relative";
+        }
+    }
+
+    if ( this.options.shrinkScrollbars == 'scale' ) {
+        this.options.useTransition = false;
+    }
+
+    this.options.invertWheelDirection = this.options.invertWheelDirection ? -1 : 1;
+
+// INSERT POINT: NORMALIZATION
+
+    // Some defaults
+    this.x = 0;
+    this.y = 0;
+    this.directionX = 0;
+    this.directionY = 0;
+    this._events = {};
+
+// INSERT POINT: DEFAULTS
+
+    this._init();
+    this.refresh();
+
+    this.scrollTo(this.options.startX, this.options.startY);
+    this.enable();
+}
+
+IScroll.prototype = {
+    version: '5.2.0',
+
+    _init: function () {
+        this._initEvents();
+
+        if ( this.options.scrollbars || this.options.indicators ) {
+            this._initIndicators();
+        }
+
+        if ( this.options.mouseWheel ) {
+            this._initWheel();
+        }
+
+        if ( this.options.snap ) {
+            this._initSnap();
+        }
+
+        if ( this.options.keyBindings ) {
+            this._initKeys();
+        }
+
+// INSERT POINT: _init
+
+    },
+
+    destroy: function () {
+        this._initEvents(true);
+        clearTimeout(this.resizeTimeout);
+        this.resizeTimeout = null;
+        this._execEvent('destroy');
+    },
+
+    _transitionEnd: function (e) {
+        if ( e.target != this.scroller || !this.isInTransition ) {
+            return;
+        }
+
+        this._transitionTime();
+        if ( !this.resetPosition(this.options.bounceTime) ) {
+            this.isInTransition = false;
+            this._execEvent('scrollEnd');
+        }
+    },
+
+    _start: function (e) {
+        // React to left mouse button only
+        if ( utils.eventType[e.type] != 1 ) {
+          // for button property
+          // http://unixpapa.com/js/mouse.html
+          var button;
+        if (!e.which) {
+          /* IE case */
+          button = (e.button < 2) ? 0 :
+                   ((e.button == 4) ? 1 : 2);
+        } else {
+          /* All others */
+          button = e.button;
+        }
+            if ( button !== 0 ) {
+                return;
+            }
+        }
+
+        if ( !this.enabled || (this.initiated && utils.eventType[e.type] !== this.initiated) ) {
+            return;
+        }
+
+        if ( this.options.preventDefault && !utils.isBadAndroid && !utils.preventDefaultException(e.target, this.options.preventDefaultException) ) {
+            e.preventDefault();
+        }
+
+        var point = e.touches ? e.touches[0] : e,
+            pos;
+
+        this.initiated  = utils.eventType[e.type];
+        this.moved      = false;
+        this.distX      = 0;
+        this.distY      = 0;
+        this.directionX = 0;
+        this.directionY = 0;
+        this.directionLocked = 0;
+
+        this.startTime = utils.getTime();
+
+        if ( this.options.useTransition && this.isInTransition ) {
+            this._transitionTime();
+            this.isInTransition = false;
+            pos = this.getComputedPosition();
+            this._translate(Math.round(pos.x), Math.round(pos.y));
+            this._execEvent('scrollEnd');
+        } else if ( !this.options.useTransition && this.isAnimating ) {
+            this.isAnimating = false;
+            this._execEvent('scrollEnd');
+        }
+
+        this.startX    = this.x;
+        this.startY    = this.y;
+        this.absStartX = this.x;
+        this.absStartY = this.y;
+        this.pointX    = point.pageX;
+        this.pointY    = point.pageY;
+
+        this._execEvent('beforeScrollStart');
+    },
+
+    _move: function (e) {
+        if ( !this.enabled || utils.eventType[e.type] !== this.initiated ) {
+            return;
+        }
+
+        if ( this.options.preventDefault ) {    // increases performance on Android? TODO: check!
+            e.preventDefault();
+        }
+
+        var point       = e.touches ? e.touches[0] : e,
+            deltaX      = point.pageX - this.pointX,
+            deltaY      = point.pageY - this.pointY,
+            timestamp   = utils.getTime(),
+            newX, newY,
+            absDistX, absDistY;
+
+        this.pointX     = point.pageX;
+        this.pointY     = point.pageY;
+
+        this.distX      += deltaX;
+        this.distY      += deltaY;
+        absDistX        = Math.abs(this.distX);
+        absDistY        = Math.abs(this.distY);
+
+        // We need to move at least 10 pixels for the scrolling to initiate
+        if ( timestamp - this.endTime > 300 && (absDistX < 10 && absDistY < 10) ) {
+            return;
+        }
+
+        // If you are scrolling in one direction lock the other
+        if ( !this.directionLocked && !this.options.freeScroll ) {
+            if ( absDistX > absDistY + this.options.directionLockThreshold ) {
+                this.directionLocked = 'h';     // lock horizontally
+            } else if ( absDistY >= absDistX + this.options.directionLockThreshold ) {
+                this.directionLocked = 'v';     // lock vertically
+            } else {
+                this.directionLocked = 'n';     // no lock
+            }
+        }
+
+        if ( this.directionLocked == 'h' ) {
+            if ( this.options.eventPassthrough == 'vertical' ) {
+                e.preventDefault();
+            } else if ( this.options.eventPassthrough == 'horizontal' ) {
+                this.initiated = false;
+                return;
+            }
+
+            deltaY = 0;
+        } else if ( this.directionLocked == 'v' ) {
+            if ( this.options.eventPassthrough == 'horizontal' ) {
+                e.preventDefault();
+            } else if ( this.options.eventPassthrough == 'vertical' ) {
+                this.initiated = false;
+                return;
+            }
+
+            deltaX = 0;
+        }
+
+        deltaX = this.hasHorizontalScroll ? deltaX : 0;
+        deltaY = this.hasVerticalScroll ? deltaY : 0;
+
+        newX = this.x + deltaX;
+        newY = this.y + deltaY;
+
+        // Slow down if outside of the boundaries
+        if ( newX > 0 || newX < this.maxScrollX ) {
+            newX = this.options.bounce ? this.x + deltaX / 3 : newX > 0 ? 0 : this.maxScrollX;
+        }
+        if ( newY > 0 || newY < this.maxScrollY ) {
+            newY = this.options.bounce ? this.y + deltaY / 3 : newY > 0 ? 0 : this.maxScrollY;
+        }
+
+        this.directionX = deltaX > 0 ? -1 : deltaX < 0 ? 1 : 0;
+        this.directionY = deltaY > 0 ? -1 : deltaY < 0 ? 1 : 0;
+
+        if ( !this.moved ) {
+            this._execEvent('scrollStart');
+        }
+
+        this.moved = true;
+
+        this._translate(newX, newY);
+
+/* REPLACE START: _move */
+
+        if ( timestamp - this.startTime > 300 ) {
+            this.startTime = timestamp;
+            this.startX = this.x;
+            this.startY = this.y;
+        }
+
+/* REPLACE END: _move */
+
+    },
+
+    _end: function (e) {
+        if ( !this.enabled || utils.eventType[e.type] !== this.initiated ) {
+            return;
+        }
+
+        if ( this.options.preventDefault && !utils.preventDefaultException(e.target, this.options.preventDefaultException) ) {
+            e.preventDefault();
+        }
+
+        var point = e.changedTouches ? e.changedTouches[0] : e,
+            momentumX,
+            momentumY,
+            duration = utils.getTime() - this.startTime,
+            newX = Math.round(this.x),
+            newY = Math.round(this.y),
+            distanceX = Math.abs(newX - this.startX),
+            distanceY = Math.abs(newY - this.startY),
+            time = 0,
+            easing = '';
+
+        this.isInTransition = 0;
+        this.initiated = 0;
+        this.endTime = utils.getTime();
+
+        // reset if we are outside of the boundaries
+        if ( this.resetPosition(this.options.bounceTime) ) {
+            return;
+        }
+
+        this.scrollTo(newX, newY);  // ensures that the last position is rounded
+
+        // we scrolled less than 10 pixels
+        if ( !this.moved ) {
+            if ( this.options.tap ) {
+                utils.tap(e, this.options.tap);
+            }
+
+            if ( this.options.click ) {
+                utils.click(e);
+            }
+
+            this._execEvent('scrollCancel');
+            return;
+        }
+
+        if ( this._events.flick && duration < 200 && distanceX < 100 && distanceY < 100 ) {
+            this._execEvent('flick');
+            return;
+        }
+
+        // start momentum animation if needed
+        if ( this.options.momentum && duration < 300 ) {
+            momentumX = this.hasHorizontalScroll ? utils.momentum(this.x, this.startX, duration, this.maxScrollX, this.options.bounce ? this.wrapperWidth : 0, this.options.deceleration) : { destination: newX, duration: 0 };
+            momentumY = this.hasVerticalScroll ? utils.momentum(this.y, this.startY, duration, this.maxScrollY, this.options.bounce ? this.wrapperHeight : 0, this.options.deceleration) : { destination: newY, duration: 0 };
+            newX = momentumX.destination;
+            newY = momentumY.destination;
+            time = Math.max(momentumX.duration, momentumY.duration);
+            this.isInTransition = 1;
+        }
+
+
+        if ( this.options.snap ) {
+            var snap = this._nearestSnap(newX, newY);
+            this.currentPage = snap;
+            time = this.options.snapSpeed || Math.max(
+                    Math.max(
+                        Math.min(Math.abs(newX - snap.x), 1000),
+                        Math.min(Math.abs(newY - snap.y), 1000)
+                    ), 300);
+            newX = snap.x;
+            newY = snap.y;
+
+            this.directionX = 0;
+            this.directionY = 0;
+            easing = this.options.bounceEasing;
+        }
+
+// INSERT POINT: _end
+
+        if ( newX != this.x || newY != this.y ) {
+            // change easing function when scroller goes out of the boundaries
+            if ( newX > 0 || newX < this.maxScrollX || newY > 0 || newY < this.maxScrollY ) {
+                easing = utils.ease.quadratic;
+            }
+
+            this.scrollTo(newX, newY, time, easing);
+            return;
+        }
+
+        this._execEvent('scrollEnd');
+    },
+
+    _resize: function () {
+        var that = this;
+
+        clearTimeout(this.resizeTimeout);
+
+        this.resizeTimeout = setTimeout(function () {
+            that.refresh();
+        }, this.options.resizePolling);
+    },
+
+    resetPosition: function (time) {
+        var x = this.x,
+            y = this.y;
+
+        time = time || 0;
+
+        if ( !this.hasHorizontalScroll || this.x > 0 ) {
+            x = 0;
+        } else if ( this.x < this.maxScrollX ) {
+            x = this.maxScrollX;
+        }
+
+        if ( !this.hasVerticalScroll || this.y > 0 ) {
+            y = 0;
+        } else if ( this.y < this.maxScrollY ) {
+            y = this.maxScrollY;
+        }
+
+        if ( x == this.x && y == this.y ) {
+            return false;
+        }
+
+        this.scrollTo(x, y, time, this.options.bounceEasing);
+
+        return true;
+    },
+
+    disable: function () {
+        this.enabled = false;
+    },
+
+    enable: function () {
+        this.enabled = true;
+    },
+
+    refresh: function () {
+        var rf = this.wrapper.offsetHeight;     // Force reflow
+
+        this.wrapperWidth   = this.wrapper.clientWidth;
+        this.wrapperHeight  = this.wrapper.clientHeight;
+
+/* REPLACE START: refresh */
+
+        this.scrollerWidth  = this.scroller.offsetWidth;
+        this.scrollerHeight = this.scroller.offsetHeight;
+
+        this.maxScrollX     = this.wrapperWidth - this.scrollerWidth;
+        this.maxScrollY     = this.wrapperHeight - this.scrollerHeight;
+
+/* REPLACE END: refresh */
+
+        this.hasHorizontalScroll    = this.options.scrollX && this.maxScrollX < 0;
+        this.hasVerticalScroll      = this.options.scrollY && this.maxScrollY < 0;
+
+        if ( !this.hasHorizontalScroll ) {
+            this.maxScrollX = 0;
+            this.scrollerWidth = this.wrapperWidth;
+        }
+
+        if ( !this.hasVerticalScroll ) {
+            this.maxScrollY = 0;
+            this.scrollerHeight = this.wrapperHeight;
+        }
+
+        this.endTime = 0;
+        this.directionX = 0;
+        this.directionY = 0;
+
+        this.wrapperOffset = utils.offset(this.wrapper);
+
+        this._execEvent('refresh');
+
+        this.resetPosition();
+
+// INSERT POINT: _refresh
+
+    },
+
+    on: function (type, fn) {
+        if ( !this._events[type] ) {
+            this._events[type] = [];
+        }
+
+        this._events[type].push(fn);
+    },
+
+    off: function (type, fn) {
+        if ( !this._events[type] ) {
+            return;
+        }
+
+        var index = this._events[type].indexOf(fn);
+
+        if ( index > -1 ) {
+            this._events[type].splice(index, 1);
+        }
+    },
+
+    _execEvent: function (type) {
+        if ( !this._events[type] ) {
+            return;
+        }
+
+        var i = 0,
+            l = this._events[type].length;
+
+        if ( !l ) {
+            return;
+        }
+
+        for ( ; i < l; i++ ) {
+            this._events[type][i].apply(this, [].slice.call(arguments, 1));
+        }
+    },
+
+    scrollBy: function (x, y, time, easing) {
+        x = this.x + x;
+        y = this.y + y;
+        time = time || 0;
+
+        this.scrollTo(x, y, time, easing);
+    },
+
+    scrollTo: function (x, y, time, easing) {
+        easing = easing || utils.ease.circular;
+
+        this.isInTransition = this.options.useTransition && time > 0;
+        var transitionType = this.options.useTransition && easing.style;
+        if ( !time || transitionType ) {
+                if(transitionType) {
+                    this._transitionTimingFunction(easing.style);
+                    this._transitionTime(time);
+                }
+            this._translate(x, y);
+        } else {
+            this._animate(x, y, time, easing.fn);
+        }
+    },
+
+    scrollToElement: function (el, time, offsetX, offsetY, easing) {
+        el = el.nodeType ? el : this.scroller.querySelector(el);
+
+        if ( !el ) {
+            return;
+        }
+
+        var pos = utils.offset(el);
+
+        pos.left -= this.wrapperOffset.left;
+        pos.top  -= this.wrapperOffset.top;
+
+        // if offsetX/Y are true we center the element to the screen
+        if ( offsetX === true ) {
+            offsetX = Math.round(el.offsetWidth / 2 - this.wrapper.offsetWidth / 2);
+        }
+        if ( offsetY === true ) {
+            offsetY = Math.round(el.offsetHeight / 2 - this.wrapper.offsetHeight / 2);
+        }
+
+        pos.left -= offsetX || 0;
+        pos.top  -= offsetY || 0;
+
+        pos.left = pos.left > 0 ? 0 : pos.left < this.maxScrollX ? this.maxScrollX : pos.left;
+        pos.top  = pos.top  > 0 ? 0 : pos.top  < this.maxScrollY ? this.maxScrollY : pos.top;
+
+        time = time === undefined || time === null || time === 'auto' ? Math.max(Math.abs(this.x-pos.left), Math.abs(this.y-pos.top)) : time;
+
+        this.scrollTo(pos.left, pos.top, time, easing);
+    },
+
+    _transitionTime: function (time) {
+        if (!this.options.useTransition) {
+            return;
+        }
+        time = time || 0;
+        var durationProp = utils.style.transitionDuration;
+        if(!durationProp) {
+            return;
+        }
+
+        this.scrollerStyle[durationProp] = time + 'ms';
+
+        if ( !time && utils.isBadAndroid ) {
+            this.scrollerStyle[durationProp] = '0.0001ms';
+            // remove 0.0001ms
+            var self = this;
+            rAF(function() {
+                if(self.scrollerStyle[durationProp] === '0.0001ms') {
+                    self.scrollerStyle[durationProp] = '0s';
+                }
+            });
+        }
+
+
+        if ( this.indicators ) {
+            for ( var i = this.indicators.length; i--; ) {
+                this.indicators[i].transitionTime(time);
+            }
+        }
+
+
+// INSERT POINT: _transitionTime
+
+    },
+
+    _transitionTimingFunction: function (easing) {
+        this.scrollerStyle[utils.style.transitionTimingFunction] = easing;
+
+
+        if ( this.indicators ) {
+            for ( var i = this.indicators.length; i--; ) {
+                this.indicators[i].transitionTimingFunction(easing);
+            }
+        }
+
+
+// INSERT POINT: _transitionTimingFunction
+
+    },
+
+    _translate: function (x, y) {
+        if ( this.options.useTransform ) {
+
+/* REPLACE START: _translate */
+
+            this.scrollerStyle[utils.style.transform] = 'translate(' + x + 'px,' + y + 'px)' + this.translateZ;
+
+/* REPLACE END: _translate */
+
+        } else {
+            x = Math.round(x);
+            y = Math.round(y);
+            this.scrollerStyle.left = x + 'px';
+            this.scrollerStyle.top = y + 'px';
+        }
+
+        this.x = x;
+        this.y = y;
+
+
+    if ( this.indicators ) {
+        for ( var i = this.indicators.length; i--; ) {
+            this.indicators[i].updatePosition();
+        }
+    }
+
+
+// INSERT POINT: _translate
+
+    },
+
+    _initEvents: function (remove) {
+        var eventType = remove ? utils.removeEvent : utils.addEvent,
+            target = this.options.bindToWrapper ? this.wrapper : window;
+
+        eventType(window, 'orientationchange', this);
+        eventType(window, 'resize', this);
+
+        if ( this.options.click ) {
+            eventType(this.wrapper, 'click', this, true);
+        }
+
+        if ( !this.options.disableMouse ) {
+            eventType(this.wrapper, 'mousedown', this);
+            eventType(target, 'mousemove', this);
+            eventType(target, 'mousecancel', this);
+            eventType(target, 'mouseup', this);
+        }
+
+        if ( utils.hasPointer && !this.options.disablePointer ) {
+            eventType(this.wrapper, utils.prefixPointerEvent('pointerdown'), this);
+            eventType(target, utils.prefixPointerEvent('pointermove'), this);
+            eventType(target, utils.prefixPointerEvent('pointercancel'), this);
+            eventType(target, utils.prefixPointerEvent('pointerup'), this);
+        }
+
+        if ( utils.hasTouch && !this.options.disableTouch ) {
+            eventType(this.wrapper, 'touchstart', this);
+            eventType(target, 'touchmove', this);
+            eventType(target, 'touchcancel', this);
+            eventType(target, 'touchend', this);
+        }
+
+        eventType(this.scroller, 'transitionend', this);
+        eventType(this.scroller, 'webkitTransitionEnd', this);
+        eventType(this.scroller, 'oTransitionEnd', this);
+        eventType(this.scroller, 'MSTransitionEnd', this);
+    },
+
+    getComputedPosition: function () {
+        var matrix = window.getComputedStyle(this.scroller, null),
+            x, y;
+
+        if ( this.options.useTransform ) {
+            matrix = matrix[utils.style.transform].split(')')[0].split(', ');
+            x = +(matrix[12] || matrix[4]);
+            y = +(matrix[13] || matrix[5]);
+        } else {
+            x = +matrix.left.replace(/[^-\d.]/g, '');
+            y = +matrix.top.replace(/[^-\d.]/g, '');
+        }
+
+        return { x: x, y: y };
+    },
+    _initIndicators: function () {
+        var interactive = this.options.interactiveScrollbars,
+            customStyle = typeof this.options.scrollbars != 'string',
+            indicators = [],
+            indicator;
+
+        var that = this;
+
+        this.indicators = [];
+
+        if ( this.options.scrollbars ) {
+            // Vertical scrollbar
+            if ( this.options.scrollY ) {
+                indicator = {
+                    el: createDefaultScrollbar('v', interactive, this.options.scrollbars),
+                    interactive: interactive,
+                    defaultScrollbars: true,
+                    customStyle: customStyle,
+                    resize: this.options.resizeScrollbars,
+                    shrink: this.options.shrinkScrollbars,
+                    fade: this.options.fadeScrollbars,
+                    listenX: false
+                };
+
+                this.wrapper.appendChild(indicator.el);
+                indicators.push(indicator);
+            }
+
+            // Horizontal scrollbar
+            if ( this.options.scrollX ) {
+                indicator = {
+                    el: createDefaultScrollbar('h', interactive, this.options.scrollbars),
+                    interactive: interactive,
+                    defaultScrollbars: true,
+                    customStyle: customStyle,
+                    resize: this.options.resizeScrollbars,
+                    shrink: this.options.shrinkScrollbars,
+                    fade: this.options.fadeScrollbars,
+                    listenY: false
+                };
+
+                this.wrapper.appendChild(indicator.el);
+                indicators.push(indicator);
+            }
+        }
+
+        if ( this.options.indicators ) {
+            // TODO: check concat compatibility
+            indicators = indicators.concat(this.options.indicators);
+        }
+
+        for ( var i = indicators.length; i--; ) {
+            this.indicators.push( new Indicator(this, indicators[i]) );
+        }
+
+        // TODO: check if we can use array.map (wide compatibility and performance issues)
+        function _indicatorsMap (fn) {
+            if (that.indicators) {
+                for ( var i = that.indicators.length; i--; ) {
+                    fn.call(that.indicators[i]);
+                }
+            }
+        }
+
+        if ( this.options.fadeScrollbars ) {
+            this.on('scrollEnd', function () {
+                _indicatorsMap(function () {
+                    this.fade();
+                });
+            });
+
+            this.on('scrollCancel', function () {
+                _indicatorsMap(function () {
+                    this.fade();
+                });
+            });
+
+            this.on('scrollStart', function () {
+                _indicatorsMap(function () {
+                    this.fade(1);
+                });
+            });
+
+            this.on('beforeScrollStart', function () {
+                _indicatorsMap(function () {
+                    this.fade(1, true);
+                });
+            });
+        }
+
+
+        this.on('refresh', function () {
+            _indicatorsMap(function () {
+                this.refresh();
+            });
+        });
+
+        this.on('destroy', function () {
+            _indicatorsMap(function () {
+                this.destroy();
+            });
+
+            delete this.indicators;
+        });
+    },
+
+    _initWheel: function () {
+        utils.addEvent(this.wrapper, 'wheel', this);
+        utils.addEvent(this.wrapper, 'mousewheel', this);
+        utils.addEvent(this.wrapper, 'DOMMouseScroll', this);
+
+        this.on('destroy', function () {
+            clearTimeout(this.wheelTimeout);
+            this.wheelTimeout = null;
+            utils.removeEvent(this.wrapper, 'wheel', this);
+            utils.removeEvent(this.wrapper, 'mousewheel', this);
+            utils.removeEvent(this.wrapper, 'DOMMouseScroll', this);
+        });
+    },
+
+    _wheel: function (e) {
+        if ( !this.enabled ) {
+            return;
+        }
+
+        e.preventDefault();
+
+        var wheelDeltaX, wheelDeltaY,
+            newX, newY,
+            that = this;
+
+        if ( this.wheelTimeout === undefined ) {
+            that._execEvent('scrollStart');
+        }
+
+        // Execute the scrollEnd event after 400ms the wheel stopped scrolling
+        clearTimeout(this.wheelTimeout);
+        this.wheelTimeout = setTimeout(function () {
+            if(!that.options.snap) {
+                that._execEvent('scrollEnd');
+            }
+            that.wheelTimeout = undefined;
+        }, 400);
+
+        if ( 'deltaX' in e ) {
+            if (e.deltaMode === 1) {
+                wheelDeltaX = -e.deltaX * this.options.mouseWheelSpeed;
+                wheelDeltaY = -e.deltaY * this.options.mouseWheelSpeed;
+            } else {
+                wheelDeltaX = -e.deltaX;
+                wheelDeltaY = -e.deltaY;
+            }
+        } else if ( 'wheelDeltaX' in e ) {
+            wheelDeltaX = e.wheelDeltaX / 120 * this.options.mouseWheelSpeed;
+            wheelDeltaY = e.wheelDeltaY / 120 * this.options.mouseWheelSpeed;
+        } else if ( 'wheelDelta' in e ) {
+            wheelDeltaX = wheelDeltaY = e.wheelDelta / 120 * this.options.mouseWheelSpeed;
+        } else if ( 'detail' in e ) {
+            wheelDeltaX = wheelDeltaY = -e.detail / 3 * this.options.mouseWheelSpeed;
+        } else {
+            return;
+        }
+
+        wheelDeltaX *= this.options.invertWheelDirection;
+        wheelDeltaY *= this.options.invertWheelDirection;
+
+        if ( !this.hasVerticalScroll ) {
+            wheelDeltaX = wheelDeltaY;
+            wheelDeltaY = 0;
+        }
+
+        if ( this.options.snap ) {
+            newX = this.currentPage.pageX;
+            newY = this.currentPage.pageY;
+
+            if ( wheelDeltaX > 0 ) {
+                newX--;
+            } else if ( wheelDeltaX < 0 ) {
+                newX++;
+            }
+
+            if ( wheelDeltaY > 0 ) {
+                newY--;
+            } else if ( wheelDeltaY < 0 ) {
+                newY++;
+            }
+
+            this.goToPage(newX, newY);
+
+            return;
+        }
+
+        newX = this.x + Math.round(this.hasHorizontalScroll ? wheelDeltaX : 0);
+        newY = this.y + Math.round(this.hasVerticalScroll ? wheelDeltaY : 0);
+
+        this.directionX = wheelDeltaX > 0 ? -1 : wheelDeltaX < 0 ? 1 : 0;
+        this.directionY = wheelDeltaY > 0 ? -1 : wheelDeltaY < 0 ? 1 : 0;
+
+        if ( newX > 0 ) {
+            newX = 0;
+        } else if ( newX < this.maxScrollX ) {
+            newX = this.maxScrollX;
+        }
+
+        if ( newY > 0 ) {
+            newY = 0;
+        } else if ( newY < this.maxScrollY ) {
+            newY = this.maxScrollY;
+        }
+
+        this.scrollTo(newX, newY, 0);
+
+// INSERT POINT: _wheel
+    },
+
+    _initSnap: function () {
+        this.currentPage = {};
+
+        if ( typeof this.options.snap == 'string' ) {
+            this.options.snap = this.scroller.querySelectorAll(this.options.snap);
+        }
+
+        this.on('refresh', function () {
+            var i = 0, l,
+                m = 0, n,
+                cx, cy,
+                x = 0, y,
+                stepX = this.options.snapStepX || this.wrapperWidth,
+                stepY = this.options.snapStepY || this.wrapperHeight,
+                el;
+
+            this.pages = [];
+
+            if ( !this.wrapperWidth || !this.wrapperHeight || !this.scrollerWidth || !this.scrollerHeight ) {
+                return;
+            }
+
+            if ( this.options.snap === true ) {
+                cx = Math.round( stepX / 2 );
+                cy = Math.round( stepY / 2 );
+
+                while ( x > -this.scrollerWidth ) {
+                    this.pages[i] = [];
+                    l = 0;
+                    y = 0;
+
+                    while ( y > -this.scrollerHeight ) {
+                        this.pages[i][l] = {
+                            x: Math.max(x, this.maxScrollX),
+                            y: Math.max(y, this.maxScrollY),
+                            width: stepX,
+                            height: stepY,
+                            cx: x - cx,
+                            cy: y - cy
+                        };
+
+                        y -= stepY;
+                        l++;
+                    }
+
+                    x -= stepX;
+                    i++;
+                }
+            } else {
+                el = this.options.snap;
+                l = el.length;
+                n = -1;
+
+                for ( ; i < l; i++ ) {
+                    if ( i === 0 || el[i].offsetLeft <= el[i-1].offsetLeft ) {
+                        m = 0;
+                        n++;
+                    }
+
+                    if ( !this.pages[m] ) {
+                        this.pages[m] = [];
+                    }
+
+                    x = Math.max(-el[i].offsetLeft, this.maxScrollX);
+                    y = Math.max(-el[i].offsetTop, this.maxScrollY);
+                    cx = x - Math.round(el[i].offsetWidth / 2);
+                    cy = y - Math.round(el[i].offsetHeight / 2);
+
+                    this.pages[m][n] = {
+                        x: x,
+                        y: y,
+                        width: el[i].offsetWidth,
+                        height: el[i].offsetHeight,
+                        cx: cx,
+                        cy: cy
+                    };
+
+                    if ( x > this.maxScrollX ) {
+                        m++;
+                    }
+                }
+            }
+
+            this.goToPage(this.currentPage.pageX || 0, this.currentPage.pageY || 0, 0);
+
+            // Update snap threshold if needed
+            if ( this.options.snapThreshold % 1 === 0 ) {
+                this.snapThresholdX = this.options.snapThreshold;
+                this.snapThresholdY = this.options.snapThreshold;
+            } else {
+                this.snapThresholdX = Math.round(this.pages[this.currentPage.pageX][this.currentPage.pageY].width * this.options.snapThreshold);
+                this.snapThresholdY = Math.round(this.pages[this.currentPage.pageX][this.currentPage.pageY].height * this.options.snapThreshold);
+            }
+        });
+
+        this.on('flick', function () {
+            var time = this.options.snapSpeed || Math.max(
+                    Math.max(
+                        Math.min(Math.abs(this.x - this.startX), 1000),
+                        Math.min(Math.abs(this.y - this.startY), 1000)
+                    ), 300);
+
+            this.goToPage(
+                this.currentPage.pageX + this.directionX,
+                this.currentPage.pageY + this.directionY,
+                time
+            );
+        });
+    },
+
+    _nearestSnap: function (x, y) {
+        if ( !this.pages.length ) {
+            return { x: 0, y: 0, pageX: 0, pageY: 0 };
+        }
+
+        var i = 0,
+            l = this.pages.length,
+            m = 0;
+
+        // Check if we exceeded the snap threshold
+        if ( Math.abs(x - this.absStartX) < this.snapThresholdX &&
+            Math.abs(y - this.absStartY) < this.snapThresholdY ) {
+            return this.currentPage;
+        }
+
+        if ( x > 0 ) {
+            x = 0;
+        } else if ( x < this.maxScrollX ) {
+            x = this.maxScrollX;
+        }
+
+        if ( y > 0 ) {
+            y = 0;
+        } else if ( y < this.maxScrollY ) {
+            y = this.maxScrollY;
+        }
+
+        for ( ; i < l; i++ ) {
+            if ( x >= this.pages[i][0].cx ) {
+                x = this.pages[i][0].x;
+                break;
+            }
+        }
+
+        l = this.pages[i].length;
+
+        for ( ; m < l; m++ ) {
+            if ( y >= this.pages[0][m].cy ) {
+                y = this.pages[0][m].y;
+                break;
+            }
+        }
+
+        if ( i == this.currentPage.pageX ) {
+            i += this.directionX;
+
+            if ( i < 0 ) {
+                i = 0;
+            } else if ( i >= this.pages.length ) {
+                i = this.pages.length - 1;
+            }
+
+            x = this.pages[i][0].x;
+        }
+
+        if ( m == this.currentPage.pageY ) {
+            m += this.directionY;
+
+            if ( m < 0 ) {
+                m = 0;
+            } else if ( m >= this.pages[0].length ) {
+                m = this.pages[0].length - 1;
+            }
+
+            y = this.pages[0][m].y;
+        }
+
+        return {
+            x: x,
+            y: y,
+            pageX: i,
+            pageY: m
+        };
+    },
+
+    goToPage: function (x, y, time, easing) {
+        easing = easing || this.options.bounceEasing;
+
+        if ( x >= this.pages.length ) {
+            x = this.pages.length - 1;
+        } else if ( x < 0 ) {
+            x = 0;
+        }
+
+        if ( y >= this.pages[x].length ) {
+            y = this.pages[x].length - 1;
+        } else if ( y < 0 ) {
+            y = 0;
+        }
+
+        var posX = this.pages[x][y].x,
+            posY = this.pages[x][y].y;
+
+        time = time === undefined ? this.options.snapSpeed || Math.max(
+            Math.max(
+                Math.min(Math.abs(posX - this.x), 1000),
+                Math.min(Math.abs(posY - this.y), 1000)
+            ), 300) : time;
+
+        this.currentPage = {
+            x: posX,
+            y: posY,
+            pageX: x,
+            pageY: y
+        };
+
+        this.scrollTo(posX, posY, time, easing);
+    },
+
+    next: function (time, easing) {
+        var x = this.currentPage.pageX,
+            y = this.currentPage.pageY;
+
+        x++;
+
+        if ( x >= this.pages.length && this.hasVerticalScroll ) {
+            x = 0;
+            y++;
+        }
+
+        this.goToPage(x, y, time, easing);
+    },
+
+    prev: function (time, easing) {
+        var x = this.currentPage.pageX,
+            y = this.currentPage.pageY;
+
+        x--;
+
+        if ( x < 0 && this.hasVerticalScroll ) {
+            x = 0;
+            y--;
+        }
+
+        this.goToPage(x, y, time, easing);
+    },
+
+    _initKeys: function (e) {
+        // default key bindings
+        var keys = {
+            pageUp: 33,
+            pageDown: 34,
+            end: 35,
+            home: 36,
+            left: 37,
+            up: 38,
+            right: 39,
+            down: 40
+        };
+        var i;
+
+        // if you give me characters I give you keycode
+        if ( typeof this.options.keyBindings == 'object' ) {
+            for ( i in this.options.keyBindings ) {
+                if ( typeof this.options.keyBindings[i] == 'string' ) {
+                    this.options.keyBindings[i] = this.options.keyBindings[i].toUpperCase().charCodeAt(0);
+                }
+            }
+        } else {
+            this.options.keyBindings = {};
+        }
+
+        for ( i in keys ) {
+            this.options.keyBindings[i] = this.options.keyBindings[i] || keys[i];
+        }
+
+        utils.addEvent(window, 'keydown', this);
+
+        this.on('destroy', function () {
+            utils.removeEvent(window, 'keydown', this);
+        });
+    },
+
+    _key: function (e) {
+        if ( !this.enabled ) {
+            return;
+        }
+
+        var snap = this.options.snap,   // we are using this alot, better to cache it
+            newX = snap ? this.currentPage.pageX : this.x,
+            newY = snap ? this.currentPage.pageY : this.y,
+            now = utils.getTime(),
+            prevTime = this.keyTime || 0,
+            acceleration = 0.250,
+            pos;
+
+        if ( this.options.useTransition && this.isInTransition ) {
+            pos = this.getComputedPosition();
+
+            this._translate(Math.round(pos.x), Math.round(pos.y));
+            this.isInTransition = false;
+        }
+
+        this.keyAcceleration = now - prevTime < 200 ? Math.min(this.keyAcceleration + acceleration, 50) : 0;
+
+        switch ( e.keyCode ) {
+            case this.options.keyBindings.pageUp:
+                if ( this.hasHorizontalScroll && !this.hasVerticalScroll ) {
+                    newX += snap ? 1 : this.wrapperWidth;
+                } else {
+                    newY += snap ? 1 : this.wrapperHeight;
+                }
+                break;
+            case this.options.keyBindings.pageDown:
+                if ( this.hasHorizontalScroll && !this.hasVerticalScroll ) {
+                    newX -= snap ? 1 : this.wrapperWidth;
+                } else {
+                    newY -= snap ? 1 : this.wrapperHeight;
+                }
+                break;
+            case this.options.keyBindings.end:
+                newX = snap ? this.pages.length-1 : this.maxScrollX;
+                newY = snap ? this.pages[0].length-1 : this.maxScrollY;
+                break;
+            case this.options.keyBindings.home:
+                newX = 0;
+                newY = 0;
+                break;
+            case this.options.keyBindings.left:
+                newX += snap ? -1 : 5 + this.keyAcceleration>>0;
+                break;
+            case this.options.keyBindings.up:
+                newY += snap ? 1 : 5 + this.keyAcceleration>>0;
+                break;
+            case this.options.keyBindings.right:
+                newX -= snap ? -1 : 5 + this.keyAcceleration>>0;
+                break;
+            case this.options.keyBindings.down:
+                newY -= snap ? 1 : 5 + this.keyAcceleration>>0;
+                break;
+            default:
+                return;
+        }
+
+        if ( snap ) {
+            this.goToPage(newX, newY);
+            return;
+        }
+
+        if ( newX > 0 ) {
+            newX = 0;
+            this.keyAcceleration = 0;
+        } else if ( newX < this.maxScrollX ) {
+            newX = this.maxScrollX;
+            this.keyAcceleration = 0;
+        }
+
+        if ( newY > 0 ) {
+            newY = 0;
+            this.keyAcceleration = 0;
+        } else if ( newY < this.maxScrollY ) {
+            newY = this.maxScrollY;
+            this.keyAcceleration = 0;
+        }
+
+        this.scrollTo(newX, newY, 0);
+
+        this.keyTime = now;
+    },
+
+    _animate: function (destX, destY, duration, easingFn) {
+        var that = this,
+            startX = this.x,
+            startY = this.y,
+            startTime = utils.getTime(),
+            destTime = startTime + duration;
+
+        function step () {
+            var now = utils.getTime(),
+                newX, newY,
+                easing;
+
+            if ( now >= destTime ) {
+                that.isAnimating = false;
+                that._translate(destX, destY);
+
+                if ( !that.resetPosition(that.options.bounceTime) ) {
+                    that._execEvent('scrollEnd');
+                }
+
+                return;
+            }
+
+            now = ( now - startTime ) / duration;
+            easing = easingFn(now);
+            newX = ( destX - startX ) * easing + startX;
+            newY = ( destY - startY ) * easing + startY;
+            that._translate(newX, newY);
+
+            if ( that.isAnimating ) {
+                rAF(step);
+            }
+        }
+
+        this.isAnimating = true;
+        step();
+    },
+    handleEvent: function (e) {
+        switch ( e.type ) {
+            case 'touchstart':
+            case 'pointerdown':
+            case 'MSPointerDown':
+            case 'mousedown':
+                this._start(e);
+                break;
+            case 'touchmove':
+            case 'pointermove':
+            case 'MSPointerMove':
+            case 'mousemove':
+                this._move(e);
+                break;
+            case 'touchend':
+            case 'pointerup':
+            case 'MSPointerUp':
+            case 'mouseup':
+            case 'touchcancel':
+            case 'pointercancel':
+            case 'MSPointerCancel':
+            case 'mousecancel':
+                this._end(e);
+                break;
+            case 'orientationchange':
+            case 'resize':
+                this._resize();
+                break;
+            case 'transitionend':
+            case 'webkitTransitionEnd':
+            case 'oTransitionEnd':
+            case 'MSTransitionEnd':
+                this._transitionEnd(e);
+                break;
+            case 'wheel':
+            case 'DOMMouseScroll':
+            case 'mousewheel':
+                this._wheel(e);
+                break;
+            case 'keydown':
+                this._key(e);
+                break;
+            case 'click':
+                if ( this.enabled && !e._constructed ) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                break;
+        }
+    }
+};
+function createDefaultScrollbar (direction, interactive, type) {
+    var scrollbar = document.createElement('div'),
+        indicator = document.createElement('div');
+
+    if ( type === true ) {
+        scrollbar.style.cssText = 'position:absolute;z-index:9999';
+        indicator.style.cssText = '-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:absolute;background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.9);border-radius:3px';
+    }
+
+    indicator.className = 'iScrollIndicator';
+
+    if ( direction == 'h' ) {
+        if ( type === true ) {
+            scrollbar.style.cssText += ';height:7px;left:2px;right:2px;bottom:0';
+            indicator.style.height = '100%';
+        }
+        scrollbar.className = 'iScrollHorizontalScrollbar';
+    } else {
+        if ( type === true ) {
+            scrollbar.style.cssText += ';width:7px;bottom:2px;top:2px;right:1px';
+            indicator.style.width = '100%';
+        }
+        scrollbar.className = 'iScrollVerticalScrollbar';
+    }
+
+    scrollbar.style.cssText += ';overflow:hidden';
+
+    if ( !interactive ) {
+        scrollbar.style.pointerEvents = 'none';
+    }
+
+    scrollbar.appendChild(indicator);
+
+    return scrollbar;
+}
+
+function Indicator (scroller, options) {
+    this.wrapper = typeof options.el == 'string' ? document.querySelector(options.el) : options.el;
+    this.wrapperStyle = this.wrapper.style;
+    this.indicator = this.wrapper.children[0];
+    this.indicatorStyle = this.indicator.style;
+    this.scroller = scroller;
+
+    this.options = {
+        listenX: true,
+        listenY: true,
+        interactive: false,
+        resize: true,
+        defaultScrollbars: false,
+        shrink: false,
+        fade: false,
+        speedRatioX: 0,
+        speedRatioY: 0
+    };
+
+    for ( var i in options ) {
+        this.options[i] = options[i];
+    }
+
+    this.sizeRatioX = 1;
+    this.sizeRatioY = 1;
+    this.maxPosX = 0;
+    this.maxPosY = 0;
+
+    if ( this.options.interactive ) {
+        if ( !this.options.disableTouch ) {
+            utils.addEvent(this.indicator, 'touchstart', this);
+            utils.addEvent(window, 'touchend', this);
+        }
+        if ( !this.options.disablePointer ) {
+            utils.addEvent(this.indicator, utils.prefixPointerEvent('pointerdown'), this);
+            utils.addEvent(window, utils.prefixPointerEvent('pointerup'), this);
+        }
+        if ( !this.options.disableMouse ) {
+            utils.addEvent(this.indicator, 'mousedown', this);
+            utils.addEvent(window, 'mouseup', this);
+        }
+    }
+
+    if ( this.options.fade ) {
+        this.wrapperStyle[utils.style.transform] = this.scroller.translateZ;
+        var durationProp = utils.style.transitionDuration;
+        if(!durationProp) {
+            return;
+        }
+        this.wrapperStyle[durationProp] = utils.isBadAndroid ? '0.0001ms' : '0ms';
+        // remove 0.0001ms
+        var self = this;
+        if(utils.isBadAndroid) {
+            rAF(function() {
+                if(self.wrapperStyle[durationProp] === '0.0001ms') {
+                    self.wrapperStyle[durationProp] = '0s';
+                }
+            });
+        }
+        this.wrapperStyle.opacity = '0';
+    }
+}
+
+Indicator.prototype = {
+    handleEvent: function (e) {
+        switch ( e.type ) {
+            case 'touchstart':
+            case 'pointerdown':
+            case 'MSPointerDown':
+            case 'mousedown':
+                this._start(e);
+                break;
+            case 'touchmove':
+            case 'pointermove':
+            case 'MSPointerMove':
+            case 'mousemove':
+                this._move(e);
+                break;
+            case 'touchend':
+            case 'pointerup':
+            case 'MSPointerUp':
+            case 'mouseup':
+            case 'touchcancel':
+            case 'pointercancel':
+            case 'MSPointerCancel':
+            case 'mousecancel':
+                this._end(e);
+                break;
+        }
+    },
+
+    destroy: function () {
+        if ( this.options.fadeScrollbars ) {
+            clearTimeout(this.fadeTimeout);
+            this.fadeTimeout = null;
+        }
+        if ( this.options.interactive ) {
+            utils.removeEvent(this.indicator, 'touchstart', this);
+            utils.removeEvent(this.indicator, utils.prefixPointerEvent('pointerdown'), this);
+            utils.removeEvent(this.indicator, 'mousedown', this);
+
+            utils.removeEvent(window, 'touchmove', this);
+            utils.removeEvent(window, utils.prefixPointerEvent('pointermove'), this);
+            utils.removeEvent(window, 'mousemove', this);
+
+            utils.removeEvent(window, 'touchend', this);
+            utils.removeEvent(window, utils.prefixPointerEvent('pointerup'), this);
+            utils.removeEvent(window, 'mouseup', this);
+        }
+
+        if ( this.options.defaultScrollbars ) {
+            this.wrapper.parentNode.removeChild(this.wrapper);
+        }
+    },
+
+    _start: function (e) {
+        var point = e.touches ? e.touches[0] : e;
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        this.transitionTime();
+
+        this.initiated = true;
+        this.moved = false;
+        this.lastPointX = point.pageX;
+        this.lastPointY = point.pageY;
+
+        this.startTime  = utils.getTime();
+
+        if ( !this.options.disableTouch ) {
+            utils.addEvent(window, 'touchmove', this);
+        }
+        if ( !this.options.disablePointer ) {
+            utils.addEvent(window, utils.prefixPointerEvent('pointermove'), this);
+        }
+        if ( !this.options.disableMouse ) {
+            utils.addEvent(window, 'mousemove', this);
+        }
+
+        this.scroller._execEvent('beforeScrollStart');
+    },
+
+    _move: function (e) {
+        var point = e.touches ? e.touches[0] : e,
+            deltaX, deltaY,
+            newX, newY,
+            timestamp = utils.getTime();
+
+        if ( !this.moved ) {
+            this.scroller._execEvent('scrollStart');
+        }
+
+        this.moved = true;
+
+        deltaX = point.pageX - this.lastPointX;
+        this.lastPointX = point.pageX;
+
+        deltaY = point.pageY - this.lastPointY;
+        this.lastPointY = point.pageY;
+
+        newX = this.x + deltaX;
+        newY = this.y + deltaY;
+
+        this._pos(newX, newY);
+
+// INSERT POINT: indicator._move
+
+        e.preventDefault();
+        e.stopPropagation();
+    },
+
+    _end: function (e) {
+        if ( !this.initiated ) {
+            return;
+        }
+
+        this.initiated = false;
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        utils.removeEvent(window, 'touchmove', this);
+        utils.removeEvent(window, utils.prefixPointerEvent('pointermove'), this);
+        utils.removeEvent(window, 'mousemove', this);
+
+        if ( this.scroller.options.snap ) {
+            var snap = this.scroller._nearestSnap(this.scroller.x, this.scroller.y);
+
+            var time = this.options.snapSpeed || Math.max(
+                    Math.max(
+                        Math.min(Math.abs(this.scroller.x - snap.x), 1000),
+                        Math.min(Math.abs(this.scroller.y - snap.y), 1000)
+                    ), 300);
+
+            if ( this.scroller.x != snap.x || this.scroller.y != snap.y ) {
+                this.scroller.directionX = 0;
+                this.scroller.directionY = 0;
+                this.scroller.currentPage = snap;
+                this.scroller.scrollTo(snap.x, snap.y, time, this.scroller.options.bounceEasing);
+            }
+        }
+
+        if ( this.moved ) {
+            this.scroller._execEvent('scrollEnd');
+        }
+    },
+
+    transitionTime: function (time) {
+        time = time || 0;
+        var durationProp = utils.style.transitionDuration;
+        if(!durationProp) {
+            return;
+        }
+
+        this.indicatorStyle[durationProp] = time + 'ms';
+
+        if ( !time && utils.isBadAndroid ) {
+            this.indicatorStyle[durationProp] = '0.0001ms';
+            // remove 0.0001ms
+            var self = this;
+            rAF(function() {
+                if(self.indicatorStyle[durationProp] === '0.0001ms') {
+                    self.indicatorStyle[durationProp] = '0s';
+                }
+            });
+        }
+    },
+
+    transitionTimingFunction: function (easing) {
+        this.indicatorStyle[utils.style.transitionTimingFunction] = easing;
+    },
+
+    refresh: function () {
+        this.transitionTime();
+
+        if ( this.options.listenX && !this.options.listenY ) {
+            this.indicatorStyle.display = this.scroller.hasHorizontalScroll ? 'block' : 'none';
+        } else if ( this.options.listenY && !this.options.listenX ) {
+            this.indicatorStyle.display = this.scroller.hasVerticalScroll ? 'block' : 'none';
+        } else {
+            this.indicatorStyle.display = this.scroller.hasHorizontalScroll || this.scroller.hasVerticalScroll ? 'block' : 'none';
+        }
+
+        if ( this.scroller.hasHorizontalScroll && this.scroller.hasVerticalScroll ) {
+            utils.addClass(this.wrapper, 'iScrollBothScrollbars');
+            utils.removeClass(this.wrapper, 'iScrollLoneScrollbar');
+
+            if ( this.options.defaultScrollbars && this.options.customStyle ) {
+                if ( this.options.listenX ) {
+                    this.wrapper.style.right = '8px';
+                } else {
+                    this.wrapper.style.bottom = '8px';
+                }
+            }
+        } else {
+            utils.removeClass(this.wrapper, 'iScrollBothScrollbars');
+            utils.addClass(this.wrapper, 'iScrollLoneScrollbar');
+
+            if ( this.options.defaultScrollbars && this.options.customStyle ) {
+                if ( this.options.listenX ) {
+                    this.wrapper.style.right = '2px';
+                } else {
+                    this.wrapper.style.bottom = '2px';
+                }
+            }
+        }
+
+        var r = this.wrapper.offsetHeight;  // force refresh
+
+        if ( this.options.listenX ) {
+            this.wrapperWidth = this.wrapper.clientWidth;
+            if ( this.options.resize ) {
+                this.indicatorWidth = Math.max(Math.round(this.wrapperWidth * this.wrapperWidth / (this.scroller.scrollerWidth || this.wrapperWidth || 1)), 8);
+                this.indicatorStyle.width = this.indicatorWidth + 'px';
+            } else {
+                this.indicatorWidth = this.indicator.clientWidth;
+            }
+
+            this.maxPosX = this.wrapperWidth - this.indicatorWidth;
+
+            if ( this.options.shrink == 'clip' ) {
+                this.minBoundaryX = -this.indicatorWidth + 8;
+                this.maxBoundaryX = this.wrapperWidth - 8;
+            } else {
+                this.minBoundaryX = 0;
+                this.maxBoundaryX = this.maxPosX;
+            }
+
+            this.sizeRatioX = this.options.speedRatioX || (this.scroller.maxScrollX && (this.maxPosX / this.scroller.maxScrollX));
+        }
+
+        if ( this.options.listenY ) {
+            this.wrapperHeight = this.wrapper.clientHeight;
+            if ( this.options.resize ) {
+                this.indicatorHeight = Math.max(Math.round(this.wrapperHeight * this.wrapperHeight / (this.scroller.scrollerHeight || this.wrapperHeight || 1)), 8);
+                this.indicatorStyle.height = this.indicatorHeight + 'px';
+            } else {
+                this.indicatorHeight = this.indicator.clientHeight;
+            }
+
+            this.maxPosY = this.wrapperHeight - this.indicatorHeight;
+
+            if ( this.options.shrink == 'clip' ) {
+                this.minBoundaryY = -this.indicatorHeight + 8;
+                this.maxBoundaryY = this.wrapperHeight - 8;
+            } else {
+                this.minBoundaryY = 0;
+                this.maxBoundaryY = this.maxPosY;
+            }
+
+            this.maxPosY = this.wrapperHeight - this.indicatorHeight;
+            this.sizeRatioY = this.options.speedRatioY || (this.scroller.maxScrollY && (this.maxPosY / this.scroller.maxScrollY));
+        }
+
+        this.updatePosition();
+    },
+
+    updatePosition: function () {
+        var x = this.options.listenX && Math.round(this.sizeRatioX * this.scroller.x) || 0,
+            y = this.options.listenY && Math.round(this.sizeRatioY * this.scroller.y) || 0;
+
+        if ( !this.options.ignoreBoundaries ) {
+            if ( x < this.minBoundaryX ) {
+                if ( this.options.shrink == 'scale' ) {
+                    this.width = Math.max(this.indicatorWidth + x, 8);
+                    this.indicatorStyle.width = this.width + 'px';
+                }
+                x = this.minBoundaryX;
+            } else if ( x > this.maxBoundaryX ) {
+                if ( this.options.shrink == 'scale' ) {
+                    this.width = Math.max(this.indicatorWidth - (x - this.maxPosX), 8);
+                    this.indicatorStyle.width = this.width + 'px';
+                    x = this.maxPosX + this.indicatorWidth - this.width;
+                } else {
+                    x = this.maxBoundaryX;
+                }
+            } else if ( this.options.shrink == 'scale' && this.width != this.indicatorWidth ) {
+                this.width = this.indicatorWidth;
+                this.indicatorStyle.width = this.width + 'px';
+            }
+
+            if ( y < this.minBoundaryY ) {
+                if ( this.options.shrink == 'scale' ) {
+                    this.height = Math.max(this.indicatorHeight + y * 3, 8);
+                    this.indicatorStyle.height = this.height + 'px';
+                }
+                y = this.minBoundaryY;
+            } else if ( y > this.maxBoundaryY ) {
+                if ( this.options.shrink == 'scale' ) {
+                    this.height = Math.max(this.indicatorHeight - (y - this.maxPosY) * 3, 8);
+                    this.indicatorStyle.height = this.height + 'px';
+                    y = this.maxPosY + this.indicatorHeight - this.height;
+                } else {
+                    y = this.maxBoundaryY;
+                }
+            } else if ( this.options.shrink == 'scale' && this.height != this.indicatorHeight ) {
+                this.height = this.indicatorHeight;
+                this.indicatorStyle.height = this.height + 'px';
+            }
+        }
+
+        this.x = x;
+        this.y = y;
+
+        if ( this.scroller.options.useTransform ) {
+            this.indicatorStyle[utils.style.transform] = 'translate(' + x + 'px,' + y + 'px)' + this.scroller.translateZ;
+        } else {
+            this.indicatorStyle.left = x + 'px';
+            this.indicatorStyle.top = y + 'px';
+        }
+    },
+
+    _pos: function (x, y) {
+        if ( x < 0 ) {
+            x = 0;
+        } else if ( x > this.maxPosX ) {
+            x = this.maxPosX;
+        }
+
+        if ( y < 0 ) {
+            y = 0;
+        } else if ( y > this.maxPosY ) {
+            y = this.maxPosY;
+        }
+
+        x = this.options.listenX ? Math.round(x / this.sizeRatioX) : this.scroller.x;
+        y = this.options.listenY ? Math.round(y / this.sizeRatioY) : this.scroller.y;
+
+        this.scroller.scrollTo(x, y);
+    },
+
+    fade: function (val, hold) {
+        if ( hold && !this.visible ) {
+            return;
+        }
+
+        clearTimeout(this.fadeTimeout);
+        this.fadeTimeout = null;
+
+        var time = val ? 250 : 500,
+            delay = val ? 0 : 300;
+
+        val = val ? '1' : '0';
+
+        this.wrapperStyle[utils.style.transitionDuration] = time + 'ms';
+
+        this.fadeTimeout = setTimeout((function (val) {
+            this.wrapperStyle.opacity = val;
+            this.visible = +val;
+        }).bind(this, val), delay);
+    }
+};
+
+IScroll.utils = utils;
+
+if (  true && module.exports ) {
+    module.exports = IScroll;
+} else if ( true ) {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () { return IScroll; }).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+    //making sure scrollOverflow works when using Require.js
+    //in the browser
+    if(typeof window !== 'undefined'){
+        window.IScroll = IScroll;
+    }
+} else {}
+
+})(window, document, Math);
+
+
+/*!
+* Scrolloverflow 2.0.2 module for fullPage.js >= 3
+* https://github.com/alvarotrigo/fullPage.js
+* @license MIT licensed
+*
+* Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
+*/
+(function (window, document) {
+    window.fp_scrolloverflow = (function() {
+
+        // check if IScroll is available in global scope
+        if (!window.IScroll) {
+            // otherwise create local one from module.exports
+            IScroll = module.exports;
+        }
+
+        // keeping central set of classnames and selectors
+        var SCROLLABLE =            'fp-scrollable';
+        var SCROLLABLE_SEL =        '.' + SCROLLABLE;
+
+        var ACTIVE =                'active';
+        var ACTIVE_SEL =            '.' + ACTIVE;
+
+        var SECTION =               'fp-section';
+        var SECTION_SEL =           '.' + SECTION;
+        var SECTION_ACTIVE_SEL =    SECTION_SEL + ACTIVE_SEL;
+
+        var SLIDE =                 'fp-slide';
+        var SLIDE_SEL =             '.' + SLIDE;
+        var SLIDE_ACTIVE_SEL =      SLIDE_SEL + ACTIVE_SEL;
+
+        var SLIDES_WRAPPER =        'fp-slides';
+        var SLIDES_WRAPPER_SEL =    '.' + SLIDES_WRAPPER;
+
+        var TABLE_CELL =            'fp-tableCell';
+        var TABLE_CELL_SEL =        '.' + TABLE_CELL;
+
+        var RESPONSIVE =            'fp-responsive';
+        var AUTO_HEIGHT_RESPONSIVE= 'fp-auto-height-responsive';
+
+        /*
+        * Turns iScroll `mousewheel` option off dynamically
+        * https://github.com/cubiq/iscroll/issues/1036
+        */
+        IScroll.prototype.wheelOn = function () {
+            this.wrapper.addEventListener('wheel', this);
+            this.wrapper.addEventListener('mousewheel', this);
+            this.wrapper.addEventListener('DOMMouseScroll', this);
+        };
+
+        /*
+        * Turns iScroll `mousewheel` option on dynamically
+        * https://github.com/cubiq/iscroll/issues/1036
+        */
+        IScroll.prototype.wheelOff = function () {
+            this.wrapper.removeEventListener('wheel', this);
+            this.wrapper.removeEventListener('mousewheel', this);
+            this.wrapper.removeEventListener('DOMMouseScroll', this);
+        };
+
+        /**
+        * Returns an integer representing the padding dimensions in px.
+        */
+        function getPaddings(element){
+            var section = fp_utils.closest(element, SECTION_SEL);
+            if(section != null){
+                return parseInt(getComputedStyle(section)['padding-bottom']) + parseInt(getComputedStyle(section)['padding-top']);
+            }
+            return 0;
+        }
+
+        function scrollBarHandler(){
+            var self = this;
+            self.options = null;
+
+            self.init = function(options, iscrollOptions){
+                self.options = options;
+                self.iscrollOptions = iscrollOptions;
+
+                if(document.readyState === 'complete'){
+                    createScrollBarForAll();
+                    fullpage_api.shared.afterRenderActions();
+                }
+                //after DOM and images are loaded
+                window.addEventListener('load', function(){
+                    createScrollBarForAll();
+                    fullpage_api.shared.afterRenderActions();
+                });
+
+                return self;
+            };
+
+            /**
+            * Creates the scrollbar for the sections and slides in the site
+            */
+            function createScrollBarForAll(){
+                if(fp_utils.hasClass(document.body, RESPONSIVE)){
+                    removeResponsiveScrollOverflows();
+                }
+                else{
+                    forEachSectionAndSlide(createScrollBar);
+                }
+            }
+
+            /**
+            * Checks if the element needs scrollbar and if the user wants to apply it.
+            * If so it creates it.
+            *
+            * @param {Object} element   jQuery object of the section or slide
+            */
+            function createScrollBar(element){
+                //User doesn't want scrollbar here? Sayonara baby!
+                if(fp_utils.hasClass(element, 'fp-noscroll')) return;
+
+                //necessary to make `scrollHeight` work under Opera 12
+                fp_utils.css(element, {'overflow': 'hidden'});
+
+                var scrollOverflowHandler = self.options.scrollOverflowHandler;
+                var wrap = scrollOverflowHandler.wrapContent();
+                var section = fp_utils.closest(element, SECTION_SEL); //in case element is a slide
+                var scrollable = scrollOverflowHandler.scrollable(element);
+                var contentHeight;
+                var paddings = getPaddings(section);
+
+                //if there was scroll, the contentHeight will be the one in the scrollable section
+                if(scrollable != null){
+                    contentHeight = scrollOverflowHandler.scrollHeight(element);
+                }
+                else{
+                    contentHeight = element.scrollHeight - paddings;
+                    if(self.options.verticalCentered){
+                        contentHeight = $(TABLE_CELL_SEL, element)[0].scrollHeight - paddings;
+                    }
+                }
+
+                var scrollHeight = fp_utils.getWindowHeight() - paddings;
+
+                //needs scroll?
+                if ( contentHeight > scrollHeight) {
+                    //did we already have an scrollbar ? Updating it
+                    if(scrollable != null){
+                        scrollOverflowHandler.update(element, scrollHeight);
+                    }
+                     //creating the scrolling
+                    else{
+                        if(self.options.verticalCentered){
+                            fp_utils.wrapInner($(TABLE_CELL_SEL, element)[0], wrap.scroller);
+                            fp_utils.wrapInner($(TABLE_CELL_SEL, element)[0], wrap.scrollable);
+                        }else{
+                            fp_utils.wrapInner(element, wrap.scroller);
+                            fp_utils.wrapInner(element, wrap.scrollable);
+                        }
+                        scrollOverflowHandler.create(element, scrollHeight, self.iscrollOptions);
+                    }
+                }
+
+                //removing the scrolling when it is not necessary anymore
+                else{
+                    scrollOverflowHandler.remove(element);
+                }
+
+                //undo
+                fp_utils.css(element, {'overflow': ''});
+            }
+
+            /**
+            * Applies a callback function to each section in the site
+            * or the slides within them
+            */
+            function forEachSectionAndSlide(callback){
+                $(SECTION_SEL).forEach(function(section){
+                    var slides = $(SLIDE_SEL, section);
+
+                    if(slides.length){
+                        slides.forEach(function(slide){
+                            callback(slide);
+                        });
+                    }else{
+                        callback(section);
+                    }
+                });
+            }
+
+            /**
+            * Removes scrollOverflow for sections using the class `fp-auto-height-responsive`
+            */
+            function removeResponsiveScrollOverflows(){
+                var scrollOverflowHandler = self.options.scrollOverflowHandler;
+                forEachSectionAndSlide(function(element){
+                    if(fp_utils.hasClass( fp_utils.closest(element, SECTION_SEL), AUTO_HEIGHT_RESPONSIVE)){
+                        scrollOverflowHandler.remove(element);
+                    }
+                });
+            }
+
+            //public functions
+            self.createScrollBarForAll = createScrollBarForAll;
+        }
+
+        /**
+         * An object to handle overflow scrolling.
+         * This uses jquery.slimScroll to accomplish overflow scrolling.
+         * It is possible to pass in an alternate scrollOverflowHandler
+         * to the fullpage.js option that implements the same functions
+         * as this handler.
+         *
+         * @type {Object}
+         */
+        var $ = null;
+        var g_fullpageOptions = null;
+        var iscrollHandler = {
+            refreshId: null,
+            iScrollInstances: [],
+
+            // Default options for iScroll.js used when using scrollOverflow
+            iscrollOptions: {
+                scrollbars: true,
+                mouseWheel: true,
+                hideScrollbars: false,
+                fadeScrollbars: false,
+                disableMouse: true,
+                interactiveScrollbars: true
+            },
+
+            init: function(options){
+                $ = fp_utils.$;
+                g_fullpageOptions = options;
+
+                var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+                //fixing bug in iScroll with links: https://github.com/cubiq/iscroll/issues/783
+                iscrollHandler.iscrollOptions.click = isTouch; // see #2035
+
+                //extending iScroll options with the user custom ones
+                iscrollHandler.iscrollOptions = fp_utils.deepExtend(iscrollHandler.iscrollOptions, options.scrollOverflowOptions);
+
+                return new scrollBarHandler().init(options, iscrollHandler.iscrollOptions);
+            },
+
+            // Enables or disables the mouse wheel for the active section or all slides in it
+            toggleWheel: function(value){
+                var scrollable = $(SCROLLABLE_SEL, $(SECTION_ACTIVE_SEL)[0]);
+                scrollable.forEach(function(item){
+                    var iScrollInstance = item.fp_iscrollInstance;
+                    if(iScrollInstance != null){
+                        if(value){
+                            iScrollInstance.wheelOn();
+                        }
+                        else{
+                            iScrollInstance.wheelOff();
+                        }
+                    }
+                });
+            },
+
+            /**
+            * Turns off iScroll for the destination section.
+            * When scrolling very fast on some trackpads (and Apple laptops) the inertial scrolling would
+            * scroll the destination section/slide before the sections animations ends.
+            */
+            onLeave: function(){
+                iscrollHandler.toggleWheel(false);
+            },
+
+            // Turns off iScroll for the leaving section
+            beforeLeave: function(){
+                iscrollHandler.onLeave()
+            },
+
+            // Turns on iScroll on section load
+            afterLoad: function(){
+                iscrollHandler.toggleWheel(true);
+            },
+
+            /**
+             * Called when overflow scrolling is needed for a section.
+             *
+             * @param  {Object} element      jQuery object containing current section
+             * @param  {Number} scrollHeight Current window height in pixels
+             */
+            create: function(element, scrollHeight, iscrollOptions) {
+                var scrollable = $(SCROLLABLE_SEL, element);
+
+                scrollable.forEach(function(item) {
+                    fp_utils.css(item, {'height': scrollHeight + 'px'});
+
+                    var iScrollInstance = item.fp_iscrollInstance;
+                    if (iScrollInstance != null) {
+                        iscrollHandler.iScrollInstances.forEach(function(instance){
+                            instance.destroy();
+                        });
+                    }
+
+                    iScrollInstance = new IScroll(item, iscrollOptions);
+                    iscrollHandler.iScrollInstances.push(iScrollInstance);
+
+                    if(!fp_utils.hasClass(fp_utils.closest(element, SECTION_SEL), ACTIVE)){
+                        //off by default until the section gets active
+                        iScrollInstance.wheelOff();
+                    }
+
+                    item.fp_iscrollInstance = iScrollInstance;
+                });
+            },
+
+            /**
+             * Return a boolean depending on whether the scrollable element is a
+             * the end or at the start of the scrolling depending on the given type.
+             *
+             * @param  {String}  type       Either 'top' or 'bottom'
+             * @param  {Object}  scrollable jQuery object for the scrollable element
+             * @return {Boolean}
+             */
+            isScrolled: function(type, scrollable) {
+                var scroller = scrollable.fp_iscrollInstance;
+
+                //no scroller?
+                if (!scroller) {
+                    return true;
+                }
+
+                if (type === 'top'){
+                    return scroller.y >= 0 && !fp_utils.getScrollTop(scrollable);
+                } else if (type === 'bottom') {
+                    return (0 - scroller.y) + fp_utils.getScrollTop(scrollable) + 1 + scrollable.offsetHeight >= scrollable.scrollHeight;
+                }
+            },
+
+            /**
+             * Returns the scrollable element for the given section.
+             * If there are landscape slides, will only return a scrollable element
+             * if it is in the active slide.
+             *
+             * @param  {Object}  activeSection jQuery object containing current section
+             * @return {Boolean}
+             */
+            scrollable: function(activeSection){
+                // if there are landscape slides, we check if the scrolling bar is in the current one or not
+                if ($(SLIDES_WRAPPER_SEL, activeSection).length) {
+                    return $(SCROLLABLE_SEL, $(SLIDE_ACTIVE_SEL, activeSection)[0] )[0];
+                }
+                return $(SCROLLABLE_SEL, activeSection)[0];
+            },
+
+            /**
+             * Returns the scroll height of the wrapped content.
+             * If this is larger than the window height minus section padding,
+             * overflow scrolling is needed.
+             *
+             * @param  {Object} element jQuery object containing current section
+             * @return {Number}
+             */
+            scrollHeight: function(element) {
+                return $('.fp-scroller', $(SCROLLABLE_SEL, element)[0] )[0].scrollHeight;
+            },
+
+            /**
+             * Called when overflow scrolling is no longer needed for a section.
+             *
+             * @param  {Object} element      jQuery object containing current section
+             */
+            remove: function(element) {
+                if(element == null) return;
+
+                var scrollable = $(SCROLLABLE_SEL, element)[0];
+                if (scrollable != null) {
+                    var iScrollInstance = scrollable.fp_iscrollInstance;
+                    if(iScrollInstance != null){
+                        iScrollInstance.destroy();
+                    }
+
+                    scrollable.fp_iscrollInstance = null;
+
+                    //unwrapping...
+                    fp_utils.unwrap($('.fp-scroller', element)[0]);
+                    fp_utils.unwrap($(SCROLLABLE_SEL, element)[0]);
+                }
+            },
+
+            /**
+             * Called when overflow scrolling has already been setup but the
+             * window height has potentially changed.
+             *
+             * @param  {Object} element      jQuery object containing current section
+             * @param  {Number} scrollHeight Current window height in pixels
+             */
+            update: function(element, scrollHeight) {
+                //using a timeout in order to execute the refresh function only once when `update` is called multiple times in a
+                //short period of time.
+                //it also comes on handy because iScroll requires the use of timeout when using `refresh`.
+                clearTimeout(iscrollHandler.refreshId);
+                iscrollHandler.refreshId = setTimeout(function(){
+                    iscrollHandler.iScrollInstances.forEach(function(instance){
+                        instance.refresh();
+
+                        //ugly hack that we are forced to use due to the timeout delay
+                        //otherwise done on the fullpage.js reBuild function
+                        fullpage_api.silentMoveTo(fp_utils.index($(SECTION_ACTIVE_SEL)[0]) + 1);
+                    });
+                }, 150);
+
+                //updating the wrappers height
+                fp_utils.css($(SCROLLABLE_SEL, element)[0], {'height': scrollHeight + 'px'});
+
+                if(g_fullpageOptions.verticalCentered){
+                    fp_utils.css($(SCROLLABLE_SEL, element)[0].parentNode, {'height': scrollHeight + 'px'});
+                }
+            },
+
+            /**
+             * Called to get any additional elements needed to wrap the section
+             * content in order to facilitate overflow scrolling.
+             *
+             * @return {String|Object} Can be a string containing HTML,
+             *                         a DOM element, or jQuery object.
+             */
+            wrapContent: function() {
+                var scrollable = document.createElement('div');
+                scrollable.className = SCROLLABLE;
+
+                var scroller = document.createElement('div');
+                scroller.className = 'fp-scroller';
+
+                return {
+                    scrollable: scrollable,
+                    scroller: scroller
+                };
+            }
+        };
+
+        return {
+            iscrollHandler: iscrollHandler
+        };
+    })();
+})(window, document);
 
 /***/ }),
 
@@ -37635,6 +40227,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css& */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/views/App.vue?vue&type=style&index=0&lang=css&":
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/views/App.vue?vue&type=style&index=0&lang=css& ***!
@@ -38279,6 +40901,427 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-fullpage.js/dist/vue-fullpage.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/vue-fullpage.js/dist/vue-fullpage.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * vue-fullpage.js v0.1.3
+ * https://github.com/alvarotrigo/vue-fullpage.js
+ *
+ * @license vue-fullpage is released under the MIT license but notice
+ * fullPage.js is licensed under GPLv3 for open source use only
+ * or Fullpage Commercial License for commercial use
+ * http://alvarotrigo.com/fullPage/pricing/
+ *
+ * Copyright (C) 2018 http://alvarotrigo.com/vue-fullpage/ - A project by Alvaro Trigo
+ */
+
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else {}
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * fullPage 3.0.5 - Extensions 0.1.8
+ * https://github.com/alvarotrigo/fullPage.js
+ * @license http://alvarotrigo.com/fullPage/extensions/#license
+ *
+ * Copyright (C) 2018 alvarotrigo.com - A project by Alvaro Trigo
+ */
+!function(e,t,n,o,r){ true?!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return e.fullpage=o(t,n),e.fullpage}.call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):undefined}(this,window,document,function(Ut,_t){"use strict";var Qt="fullpage-wrapper",Jt="."+Qt,Kt="fp-responsive",$t="fp-notransition",qt="fp-destroyed",en="fp-enabled",tn="fp-viewing",nn="active",on="."+nn,rn="fp-completely",ln="fp-section",an="."+ln,sn=an+on,cn="fp-tableCell",un="."+cn,dn="fp-auto-height",fn="fp-normal-scroll",vn="fp-nav",pn="#"+vn,hn="fp-tooltip",gn="fp-slide",mn="."+gn,Sn=mn+on,bn="fp-slides",yn="."+bn,wn="fp-slidesContainer",En="."+wn,xn="fp-table",An="fp-slidesNav",Ln="."+An,Mn=Ln+" a",e="fp-controlArrow",Tn="."+e,On="fp-prev",kn=Tn+".fp-prev",Cn=Tn+".fp-next";function Hn(e,t){Ut.console&&Ut.console[e]&&Ut.console[e]("fullPage: "+t)}function Rn(e,t){return(t=1<arguments.length?t:_t)?t.querySelectorAll(e):null}function In(e){e=e||{};for(var t=1,n=arguments.length;t<n;++t){var o=arguments[t];if(o)for(var r in o)o.hasOwnProperty(r)&&("[object Object]"!==Object.prototype.toString.call(o[r])?e[r]=o[r]:e[r]=In(e[r],o[r]))}return e}function zn(e,t){return null!=e&&(e.classList?e.classList.contains(t):new RegExp("(^| )"+t+"( |$)","gi").test(e.className))}function Bn(){return"innerHeight"in Ut?Ut.innerHeight:_t.documentElement.offsetHeight}function Nn(e,t){var n;for(n in e=l(e),t)if(t.hasOwnProperty(n)&&null!==n)for(var o=0;o<e.length;o++){e[o].style[n]=t[n]}return e}function n(e,t,n){for(var o=e[n];o&&!io(o,t);)o=o[n];return o}function jn(e,t){return n(e,t,"previousElementSibling")}function Pn(e,t){return n(e,t,"nextElementSibling")}function Wn(e,t){if(null==t)return e.previousElementSibling;var n=Wn(e);return n&&io(n,t)?n:null}function Yn(e,t){if(null==t)return e.nextElementSibling;var n=Yn(e);return n&&io(n,t)?n:null}function Dn(e){return e[e.length-1]}function Xn(e,t){e=i(e)?e[0]:e;for(var n=null!=t?Rn(t,e.parentNode):e.parentNode.childNodes,o=0,r=0;r<n.length;r++){if(n[r]==e)return o;1==n[r].nodeType&&o++}return-1}function l(e){return i(e)?e:[e]}function Vn(e){e=l(e);for(var t=0;t<e.length;t++)e[t].style.display="none";return e}function Zn(e){e=l(e);for(var t=0;t<e.length;t++)e[t].style.display="block";return e}function i(e){return"[object Array]"===Object.prototype.toString.call(e)||"[object NodeList]"===Object.prototype.toString.call(e)}function Gn(e,t){e=l(e);for(var n=0;n<e.length;n++){var o=e[n];o.classList?o.classList.add(t):o.className+=" "+t}return e}function Fn(e,t){e=l(e);for(var n=t.split(" "),o=0;o<n.length;o++){t=n[o];for(var r=0;r<e.length;r++){var i=e[r];i.classList?i.classList.remove(t):i.className=i.className.replace(new RegExp("(^|\\b)"+t.split(" ").join("|")+"(\\b|$)","gi")," ")}}return e}function Un(e,t){t.appendChild(e)}function o(e,t,n){var o;t=t||_t.createElement("div");for(var r=0;r<e.length;r++){var i=e[r];(n&&!r||!n)&&(o=t.cloneNode(!0),i.parentNode.insertBefore(o,i)),o.appendChild(i)}return e}function _n(e,t){o(e,t,!0)}function Qn(e,t){for("string"==typeof t&&(t=ao(t)),e.appendChild(t);e.firstChild!==t;)t.appendChild(e.firstChild)}function Jn(e){for(var t=_t.createDocumentFragment();e.firstChild;)t.appendChild(e.firstChild);e.parentNode.replaceChild(t,e)}function Kn(e,t){return e&&1===e.nodeType?io(e,t)?e:Kn(e.parentNode,t):null}function $n(e,t){r(e,e.nextSibling,t)}function qn(e,t){r(e,e,t)}function r(e,t,n){i(n)||("string"==typeof n&&(n=ao(n)),n=[n]);for(var o=0;o<n.length;o++)e.parentNode.insertBefore(n[o],t)}function eo(){var e=_t.documentElement;return(Ut.pageYOffset||e.scrollTop)-(e.clientTop||0)}function to(t){return Array.prototype.filter.call(t.parentNode.children,function(e){return e!==t})}function no(e){e.preventDefault?e.preventDefault():e.returnValue=!1}function oo(e){if("function"==typeof e)return!0;var t=Object.prototype.toString(e);return"[object Function]"===t||"[object GeneratorFunction]"===t}function ro(e,t,n){var o;n=void 0===n?{}:n,"function"==typeof Ut.CustomEvent?o=new CustomEvent(t,{detail:n}):(o=_t.createEvent("CustomEvent")).initCustomEvent(t,!0,!0,n),e.dispatchEvent(o)}function io(e,t){return(e.matches||e.matchesSelector||e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||e.oMatchesSelector).call(e,t)}function lo(e,t){if("boolean"==typeof t)for(var n=0;n<e.length;n++)e[n].style.display=t?"block":"none";return e}function ao(e){var t=_t.createElement("div");return t.innerHTML=e.trim(),t.firstChild}function so(e){e=l(e);for(var t=0;t<e.length;t++){var n=e[t];n&&n.parentElement&&n.parentNode.removeChild(n)}}function a(e,t,n){for(var o=e[n],r=[];o;)(io(o,t)||null==t)&&r.push(o),o=o[n];return r}function co(e,t){return a(e,t,"nextElementSibling")}function uo(e,t){return a(e,t,"previousElementSibling")}function fo(e,t){e.insertBefore(t,e.firstChild)}return Ut.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=function(e,t){t=t||Ut;for(var n=0;n<this.length;n++)e.call(t,this[n],n,this)}),Ut.fp_utils={$:Rn,deepExtend:In,hasClass:zn,getWindowHeight:Bn,css:Nn,until:n,prevUntil:jn,nextUntil:Pn,prev:Wn,next:Yn,last:Dn,index:Xn,getList:l,hide:Vn,show:Zn,isArrayOrList:i,addClass:Gn,removeClass:Fn,appendTo:Un,wrap:o,wrapAll:_n,wrapInner:Qn,unwrap:Jn,closest:Kn,after:$n,before:qn,insertBefore:r,getScrollTop:eo,siblings:to,preventDefault:no,isFunction:oo,trigger:ro,matches:io,toggle:lo,createElementFromHTML:ao,remove:so,filter:function(e,t){Array.prototype.filter.call(e,t)},untilAll:a,nextAll:co,prevAll:uo,showError:Hn,prependTo:fo,toggleClass:function(e,t,n){if(e.classList&&null==n)e.classList.toggle(t);else{var o=zn(e,t);o&&null==n||!n?Fn(e,t):(!o&&null==n||n)&&Gn(e,t)}}},function(e,g){var t=g&&new RegExp("([\\d\\w]{8}-){3}[\\d\\w]{8}|^(?=.*?[A-Y])(?=.*?[a-y])(?=.*?[0-8])(?=.*?[#?!@$%^&*-]).{8,}$").test(g.licenseKey)||-1<_t.domain.indexOf("alvarotrigo.com");if(!zn(Rn("html"),en)){var r=Rn("html, body"),m=Rn("body")[0],S={};g=In({menu:!1,anchors:[],lockAnchors:!1,navigation:!1,navigationPosition:"right",navigationTooltips:[],showActiveTooltip:!1,slidesNavigation:!1,slidesNavPosition:"bottom",scrollBar:!1,hybrid:!1,css3:!0,scrollingSpeed:700,autoScrolling:!0,fitToSection:!0,fitToSectionDelay:1e3,easing:"easeInOutCubic",easingcss3:"ease",loopBottom:!1,loopTop:!1,loopHorizontal:!0,continuousVertical:!1,continuousHorizontal:!1,scrollHorizontally:!1,interlockedSlides:!1,dragAndMove:!1,offsetSections:!1,resetSliders:!1,fadingEffect:!1,normalScrollElements:null,scrollOverflow:!1,scrollOverflowReset:!1,scrollOverflowHandler:Ut.fp_scrolloverflow?Ut.fp_scrolloverflow.iscrollHandler:null,scrollOverflowOptions:null,touchSensitivity:5,touchWrapper:"string"==typeof e?Rn(e)[0]:e,normalScrollElementTouchThreshold:5,bigSectionsDestination:null,keyboardScrolling:!0,animateAnchor:!0,recordHistory:!0,controlArrows:!0,controlArrowColor:"#fff",verticalCentered:!0,sectionsColor:[],paddingTop:0,paddingBottom:0,fixedElements:null,responsive:0,responsiveWidth:0,responsiveHeight:0,responsiveSlides:!1,parallax:!1,parallaxOptions:{type:"reveal",percentage:62,property:"translate"},cards:!1,cardsOptions:{perspective:100,fadeContent:!0,fadeBackground:!0},sectionSelector:".section",slideSelector:".slide",v2compatible:!1,afterLoad:null,onLeave:null,afterRender:null,afterResize:null,afterReBuild:null,afterSlideLoad:null,onSlideLeave:null,afterResponsive:null,lazyLoading:!0},g);var b,l,c,n,a=!1,o=navigator.userAgent.match(/(iPhone|iPod|iPad|Android|playbook|silk|BlackBerry|BB10|Windows Phone|Tizen|Bada|webOS|IEMobile|Opera Mini)/),i="ontouchstart"in Ut||0<navigator.msMaxTouchPoints||navigator.maxTouchPoints,y="string"==typeof e?Rn(e)[0]:e,w=Bn(),E=!1,s=!0,x=!0,u=[],d={m:{up:!0,down:!0,left:!0,right:!0}};d.k=In({},d.m);var f,v,p,h,A,L,M,T,O=kt(),k={touchmove:"ontouchmove"in Ut?"touchmove":O.move,touchstart:"ontouchstart"in Ut?"touchstart":O.down},C=!1,H='a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]',R=!1;try{var I=Object.defineProperty({},"passive",{get:function(){R=!0}});Ut.addEventListener("testPassive",null,I),Ut.removeEventListener("testPassive",null,I)}catch(e){}var z,B=In({},g),N=!1,j=!0,P={};Dt(),Ut.fp_easings=In(Ut.fp_easings,{easeInOutCubic:function(e,t,n,o){return(e/=o/2)<1?n/2*e*e*e+t:n/2*((e-=2)*e*e+2)+t}}),y&&(S.version="3.0.5",S.setAutoScrolling=K,S.setRecordHistory=$,S.setScrollingSpeed=q,S.setFitToSection=ee,S.setLockAnchors=function(e){g.lockAnchors=e},S.setMouseWheelScrolling=te,S.setAllowScrolling=ne,S.setKeyboardScrolling=re,S.moveSectionUp=ie,S.moveSectionDown=le,S.silentMoveTo=ae,S.moveTo=se,S.moveSlideRight=ce,S.moveSlideLeft=ue,S.fitToSection=xe,S.reBuild=de,S.setResponsive=fe,S.getFullpageData=function(){return{options:g,internals:{container:y,canScroll:x,isScrollAllowed:d,getDestinationPosition:Ie,isTouch:i,c:Je,getXmovement:St,removeAnimation:ht,getTransforms:It,lazyLoad:De,addAnimation:pt,performHorizontalMove:dt,landscapeScroll:st,silentLandscapeScroll:Ht,keepSlidesPosition:Re,silentScroll:Rt,styleSlides:me,styleSection:be,scrollHandler:Ee,getEventsPage:Ct,getMSPointer:kt,isReallyTouch:Te,usingExtension:Nt,toggleControlArrows:ct,touchStartHandler:Oe,touchMoveHandler:Me}}},S.destroy=function(e){ro(y,"destroy",e),K(!1,"internal"),ne(!0),oe(!1),re(!1),Gn(y,qt),clearTimeout(h),clearTimeout(p),clearTimeout(v),clearTimeout(A),clearTimeout(L),Ut.removeEventListener("scroll",Ee),Ut.removeEventListener("hashchange",qe),Ut.removeEventListener("resize",ft),_t.removeEventListener("keydown",tt),_t.removeEventListener("keyup",nt),["click","touchstart"].forEach(function(e){_t.removeEventListener(e,ve)}),["mouseenter","touchstart","mouseleave","touchend"].forEach(function(e){_t.removeEventListener(e,he,!0)}),Nt("dragAndMove")&&S.dragAndMove.destroy(),clearTimeout(h),clearTimeout(p),e&&(Rt(0),Rn("img[data-src], source[data-src], audio[data-src], iframe[data-src]",y).forEach(function(e){Ye(e,"src")}),Rn("img[data-srcset]").forEach(function(e){Ye(e,"srcset")}),so(Rn(pn+", "+Ln+", "+Tn)),Nn(Rn(an),{height:"","background-color":"",padding:""}),Nn(Rn(mn),{width:""}),Nn(y,{height:"",position:"","-ms-touch-action":"","touch-action":""}),Nn(r,{overflow:"",height:""}),Fn(Rn("html"),en),Fn(m,Kt),m.className.split(/\s+/).forEach(function(e){0===e.indexOf(tn)&&Fn(m,e)}),Rn(an+", "+mn).forEach(function(e){g.scrollOverflowHandler&&g.scrollOverflow&&g.scrollOverflowHandler.remove(e),Fn(e,xn+" "+nn+" "+rn);var t=e.getAttribute("data-fp-styles");t&&e.setAttribute("style",e.getAttribute("data-fp-styles")),zn(e,ln)&&!N&&e.removeAttribute("data-anchor")}),Bt(y),[un,En,yn].forEach(function(e){Rn(e,y).forEach(function(e){Jn(e)})}),Ut.scrollTo(0,0),[ln,gn,wn].forEach(function(e){Fn(Rn("."+e),e)}))},S.getActiveSection=function(){return new Gt(Rn(sn)[0])},S.getActiveSlide=function(){return je(Rn(Sn,Rn(sn)[0])[0])},S.landscapeScroll=st,S.test={top:"0px",translate3d:"translate3d(0px, 0px, 0px)",translate3dH:function(){for(var e=[],t=0;t<Rn(g.sectionSelector,y).length;t++)e.push("translate3d(0px, 0px, 0px)");return e}(),left:function(){for(var e=[],t=0;t<Rn(g.sectionSelector,y).length;t++)e.push(0);return e}(),options:g,setAutoScrolling:K},S.shared={afterRenderActions:we},Ut.fullpage_api=S,g.$&&(g.$.fn.fullpage=S),ge("continuousHorizontal"),ge("scrollHorizontally"),ge("resetSliders"),ge("interlockedSlides"),ge("responsiveSlides"),ge("fadingEffect"),ge("dragAndMove"),ge("offsetSections"),ge("scrollOverflowReset"),ge("parallax"),ge("cards"),Nt("dragAndMove")&&S.dragAndMove.init(),g.css3&&(g.css3=function(){var e,t=_t.createElement("p"),n={webkitTransform:"-webkit-transform",OTransform:"-o-transform",msTransform:"-ms-transform",MozTransform:"-moz-transform",transform:"transform"};for(var o in t.style.display="block",_t.body.insertBefore(t,null),n)void 0!==t.style[o]&&(t.style[o]="translate3d(1px,1px,1px)",e=Ut.getComputedStyle(t).getPropertyValue(n[o]));return _t.body.removeChild(t),void 0!==e&&0<e.length&&"none"!==e}()),g.scrollBar=g.scrollBar||g.hybrid,function(){if(!g.anchors.length){var e="[data-anchor]",t=Rn(g.sectionSelector.split(",").join(e+",")+e,y);t.length&&(N=!0,t.forEach(function(e){g.anchors.push(e.getAttribute("data-anchor").toString())}))}if(!g.navigationTooltips.length){var e="[data-tooltip]",n=Rn(g.sectionSelector.split(",").join(e+",")+e,y);n.length&&n.forEach(function(e){g.navigationTooltips.push(e.getAttribute("data-tooltip").toString())})}}(),function(){Nn(y,{height:"100%",position:"relative"}),Gn(y,Qt),Gn(Rn("html"),en),w=Bn(),Fn(y,qt),Gn(Rn(g.sectionSelector,y),ln),Gn(Rn(g.slideSelector,y),gn),jt("parallax","init");for(var e=Rn(an),t=0;t<e.length;t++){var n=t,o=e[t],r=Rn(mn,o),i=r.length;o.setAttribute("data-fp-styles",o.getAttribute("style")),be(o,n),l=o,a=n,void 0!==g.anchors[a]&&zn(l,nn)&&gt(g.anchors[a],a),g.menu&&g.css3&&null!=Kn(Rn(g.menu)[0],Jt)&&Rn(g.menu).forEach(function(e){m.appendChild(e)}),0<i?me(o,r,i):g.verticalCentered&&bt(o)}var l,a;g.fixedElements&&g.css3&&Rn(g.fixedElements).forEach(function(e){m.appendChild(e)}),g.navigation&&function(){var e=_t.createElement("div");e.setAttribute("id",vn);var t=_t.createElement("ul");e.appendChild(t),Un(e,m);var n=Rn(pn)[0];Gn(n,"fp-"+g.navigationPosition),g.showActiveTooltip&&Gn(n,"fp-show-active");for(var o="",r=0;r<Rn(an).length;r++){var i="";g.anchors.length&&(i=g.anchors[r]),o+='<li><a href="#'+i+'"><span class="fp-sr-only">'+ye(r,"Section")+"</span><span></span></a>";var l=g.navigationTooltips[r];void 0!==l&&""!==l&&(o+='<div class="'+hn+" fp-"+g.navigationPosition+'">'+l+"</div>"),o+="</li>"}Rn("ul",n)[0].innerHTML=o,Nn(Rn(pn),{"margin-top":"-"+Rn(pn)[0].offsetHeight/2+"px"}),Gn(Rn("a",Rn("li",Rn(pn)[0])[Xn(Rn(sn)[0],an)]),nn)}(),Rn('iframe[src*="youtube.com/embed/"]',y).forEach(function(e){var t,n,o;n="enablejsapi=1",o=(t=e).getAttribute("src"),t.setAttribute("src",o+(/\?/.test(o)?"&":"?")+n)}),g.fadingEffect&&S.fadingEffect&&S.fadingEffect.apply(),Nt("cards")&&S.cards.init(),g.scrollOverflow&&(f=g.scrollOverflowHandler.init(g))}(),ne(!0),oe(!0),K(g.autoScrolling,"internal"),vt(),Ot(),"complete"===_t.readyState&&$e(),Ut.addEventListener("load",$e),g.scrollOverflow||we(),Ut.addEventListener("scroll",Ee),Ut.addEventListener("hashchange",qe),Ut.addEventListener("blur",lt),Ut.addEventListener("resize",ft),_t.addEventListener("keydown",tt),_t.addEventListener("keyup",nt),["click","touchstart"].forEach(function(e){_t.addEventListener(e,ve)}),g.normalScrollElements&&(["mouseenter","touchstart"].forEach(function(e){pe(e,!1)}),["mouseleave","touchend"].forEach(function(e){pe(e,!0)})),Nt("dragAndMove")&&S.dragAndMove.turnOffTouch());var W,Y,D,X=!1,V=0,Z=0,G=0,F=0,U=(new Date).getTime(),_=0,Q=0,J=w;return S}function K(e,t){e||Rt(0),Yt("autoScrolling",e,t);var n=Rn(sn)[0];if(g.autoScrolling&&!g.scrollBar)Nn(r,{overflow:"hidden",height:"100%"}),$(B.recordHistory,"internal"),Nn(y,{"-ms-touch-action":"none","touch-action":"none"}),null!=n&&Rt(n.offsetTop);else if(Nn(r,{overflow:"visible",height:"initial"}),$(!!g.autoScrolling&&B.recordHistory,"internal"),Nn(y,{"-ms-touch-action":"","touch-action":""}),Bt(y),null!=n){var o=Pe(n.offsetTop);o.element.scrollTo(0,o.options)}ro(y,"setAutoScrolling",e)}function $(e,t){Yt("recordHistory",e,t)}function q(e,t){"internal"!==t&&Nt("fadingEffect")&&S.fadingEffect.update(e),Nt("cards")&&S.cards.update(e),Yt("scrollingSpeed",e,t)}function ee(e,t){Yt("fitToSection",e,t)}function te(e){e?(function(){var e,t="";Ut.addEventListener?e="addEventListener":(e="attachEvent",t="on");var n="onwheel"in _t.createElement("div")?"wheel":void 0!==_t.onmousewheel?"mousewheel":"DOMMouseScroll",o=!!R&&{passive:!1};"DOMMouseScroll"==n?_t[e](t+"MozMousePixelScroll",Ce,o):_t[e](t+n,Ce,o)}(),y.addEventListener("mousedown",ot),y.addEventListener("mouseup",rt)):(_t.addEventListener?(_t.removeEventListener("mousewheel",Ce,!1),_t.removeEventListener("wheel",Ce,!1),_t.removeEventListener("MozMousePixelScroll",Ce,!1)):_t.detachEvent("onmousewheel",Ce),y.removeEventListener("mousedown",ot),y.removeEventListener("mouseup",rt))}function ne(t,e){void 0!==e?(e=e.replace(/ /g,"").split(",")).forEach(function(e){zt(t,e,"m")}):zt(t,"all","m"),ro(y,"setAllowScrolling",{value:t,directions:e})}function oe(e){e?(te(!0),function(){if(o||i){g.autoScrolling&&(m.removeEventListener(k.touchmove,Le,{passive:!1}),m.addEventListener(k.touchmove,Le,{passive:!1}));var e=g.touchWrapper;e.removeEventListener(k.touchstart,Oe),e.removeEventListener(k.touchmove,Me,{passive:!1}),e.addEventListener(k.touchstart,Oe),e.addEventListener(k.touchmove,Me,{passive:!1})}}()):(te(!1),function(){if(o||i){g.autoScrolling&&(m.removeEventListener(k.touchmove,Me,{passive:!1}),m.removeEventListener(k.touchmove,Le,{passive:!1}));var e=g.touchWrapper;e.removeEventListener(k.touchstart,Oe),e.removeEventListener(k.touchmove,Me,{passive:!1})}}())}function re(t,e){void 0!==e?(e=e.replace(/ /g,"").split(",")).forEach(function(e){zt(t,e,"k")}):(zt(t,"all","k"),g.keyboardScrolling=t)}function ie(){var e=jn(Rn(sn)[0],an);e||!g.loopTop&&!g.continuousVertical||(e=Dn(Rn(an))),null!=e&&ze(e,null,!0)}function le(){var e=Pn(Rn(sn)[0],an);e||!g.loopBottom&&!g.continuousVertical||(e=Rn(an)[0]),null!=e&&ze(e,null,!1)}function ae(e,t){q(0,"internal"),se(e,t),q(B.scrollingSpeed,"internal")}function se(e,t){var n=Et(e);void 0!==t?xt(e,t):null!=n&&ze(n)}function ce(e){He("right",e)}function ue(e){He("left",e)}function de(e){if(!zn(y,qt)){E=!0,w=Bn();for(var t=Rn(an),n=0;n<t.length;++n){var o=t[n],r=Rn(yn,o)[0],i=Rn(mn,o);g.verticalCentered&&Nn(Rn(un,o),{height:yt(o)+"px"}),Nn(o,{height:Se(o)+"px"}),1<i.length&&st(r,Rn(Sn,r)[0])}g.scrollOverflow&&f.createScrollBarForAll();var l=Xn(Rn(sn)[0],an);l&&!Nt("fadingEffect")&&ae(l+1),E=!1,oo(g.afterResize)&&e&&g.afterResize.call(y,Ut.innerWidth,Ut.innerHeight),oo(g.afterReBuild)&&!e&&g.afterReBuild.call(y),ro(y,"afterRebuild")}}function fe(e){var t=zn(m,Kt);e?t||(K(!1,"internal"),ee(!1,"internal"),Vn(Rn(pn)),Gn(m,Kt),oo(g.afterResponsive)&&g.afterResponsive.call(y,e),g.responsiveSlides&&S.responsiveSlides&&S.responsiveSlides.toSections(),ro(y,"afterResponsive",e),g.scrollOverflow&&f.createScrollBarForAll()):t&&(K(B.autoScrolling,"internal"),ee(B.autoScrolling,"internal"),Zn(Rn(pn)),Fn(m,Kt),oo(g.afterResponsive)&&g.afterResponsive.call(y,e),g.responsiveSlides&&S.responsiveSlides&&S.responsiveSlides.toSlides(),ro(y,"afterResponsive",e))}function ve(e){var t=e.target;t&&Kn(t,pn+" a")?function(e){no(e);var t=Xn(Kn(this,pn+" li"));ze(Rn(an)[t])}.call(t,e):io(t,".fp-tooltip")?function(){ro(Wn(this),"click")}.call(t):io(t,Tn)?function(){var e=Kn(this,an);zn(this,On)?d.m.left&&ue(e):d.m.right&&ce(e)}.call(t,e):io(t,Mn)||null!=Kn(t,Mn)?function(e){no(e);var t=Rn(yn,Kn(this,an))[0],n=Rn(mn,t)[Xn(Kn(this,"li"))];st(t,n)}.call(t,e):Kn(t,g.menu+" [data-menuanchor]")&&function(e){!Rn(g.menu)[0]||!g.lockAnchors&&g.anchors.length||(no(e),se(this.getAttribute("data-menuanchor")))}.call(t,e)}function pe(e,t){_t["fp_"+e]=t,_t.addEventListener(e,he,!0)}function he(t){t.target!=_t&&("touchend"===t.type&&(j=!1,setTimeout(function(){j=!0},800)),("mouseenter"!==t.type||j)&&g.normalScrollElements.split(",").forEach(function(e){null!=Kn(t.target,e)&&oe(_t["fp_"+t.type])}))}function ge(e){var t="fp_"+e+"Extension";P[e]=g[e+"Key"],S[e]=void 0!==Ut[t]?new Ut[t]:null,S[e]&&S[e].c(e)}function me(e,t,n){var o=100*n,r=100/n,i=_t.createElement("div");i.className=bn,_n(t,i);var l,a,s=_t.createElement("div");s.className=wn,_n(t,s),Nn(Rn(En,e),{width:o+"%"}),1<n&&(g.controlArrows&&(l=e,a=[ao('<div class="fp-controlArrow fp-prev"></div>'),ao('<div class="fp-controlArrow fp-next"></div>')],$n(Rn(yn,l)[0],a),"#fff"!==g.controlArrowColor&&(Nn(Rn(Cn,l),{"border-color":"transparent transparent transparent "+g.controlArrowColor}),Nn(Rn(kn,l),{"border-color":"transparent "+g.controlArrowColor+" transparent transparent"})),g.loopHorizontal||Vn(Rn(kn,l))),g.slidesNavigation&&function(e,t){Un(ao('<div class="'+An+'"><ul></ul></div>'),e);var n=Rn(Ln,e)[0];Gn(n,"fp-"+g.slidesNavPosition);for(var o=0;o<t;o++)Un(ao('<li><a href="#"><span class="fp-sr-only">'+ye(o,"Slide")+"</span><span></span></a></li>"),Rn("ul",n)[0]);Nn(n,{"margin-left":"-"+n.innerWidth/2+"px"}),Gn(Rn("a",Rn("li",n)[0]),nn)}(e,n)),t.forEach(function(e){Nn(e,{width:r+"%"}),g.verticalCentered&&bt(e)});var c=Rn(Sn,e)[0];null!=c&&(0!==Xn(Rn(sn),an)||0===Xn(Rn(sn),an)&&0!==Xn(c))?(Ht(c,"internal"),Gn(c,"fp-initial")):Gn(t[0],nn)}function Se(e){return g.offsetSections&&S.offsetSections?Math.round(S.offsetSections.getWindowHeight(e)):Bn()}function be(e,t){t||null!=Rn(sn)[0]||Gn(e,nn),n=Rn(sn)[0],Nn(e,{height:Se(e)+"px"}),g.paddingTop&&Nn(e,{"padding-top":g.paddingTop}),g.paddingBottom&&Nn(e,{"padding-bottom":g.paddingBottom}),void 0!==g.sectionsColor[t]&&Nn(e,{"background-color":g.sectionsColor[t]}),void 0!==g.anchors[t]&&e.setAttribute("data-anchor",g.anchors[t])}function ye(e,t){return g.navigationTooltips[e]||g.anchors[e]||t+" "+(e+1)}function we(){var e,t=Rn(sn)[0];Gn(t,rn),De(t),Xe(t),g.scrollOverflow&&g.scrollOverflowHandler.afterLoad(),(!(e=Et(et().section))||void 0!==e&&Xn(e)===Xn(n))&&oo(g.afterLoad)&&Be("afterLoad",{activeSection:null,element:t,direction:null,anchorLink:t.getAttribute("data-anchor"),sectionIndex:Xn(t,an)}),oo(g.afterRender)&&Be("afterRender"),ro(y,"afterRender")}function Ee(){var e;if(ro(y,"onScroll"),(!g.autoScrolling||g.scrollBar||Nt("dragAndMove"))&&!Wt()){var t=Nt("dragAndMove")?Math.abs(S.dragAndMove.getCurrentScroll()):eo(),n=0,o=t+Bn()/2,r=(Nt("dragAndMove")?S.dragAndMove.getDocumentHeight():m.offsetHeight-Bn())===t,i=Rn(an);if(r)n=i.length-1;else if(t)for(var l=0;l<i.length;++l)i[l].offsetTop<=o&&(n=l);else n=0;if(!zn(e=i[n],nn)){X=!0;var a,s,c=Rn(sn)[0],u=Xn(c,an)+1,d=mt(e),f=e.getAttribute("data-anchor"),v=Xn(e,an)+1,p=Rn(Sn,e)[0],h={activeSection:c,sectionIndex:v-1,anchorLink:f,element:e,leavingSection:u,direction:d};p&&(s=p.getAttribute("data-anchor"),a=Xn(p)),x&&(Gn(e,nn),Fn(to(e),nn),jt("parallax","afterLoad"),oo(g.onLeave)&&Be("onLeave",h),oo(g.afterLoad)&&Be("afterLoad",h),g.resetSliders&&S.resetSliders&&S.resetSliders.apply({localIsResizing:E,leavingSection:u}),Ze(c),De(e),Xe(e),gt(f,v-1),g.anchors.length&&(b=f),Lt(a,s,f)),clearTimeout(A),A=setTimeout(function(){X=!1},100)}g.fitToSection&&(clearTimeout(L),L=setTimeout(function(){g.fitToSection&&Rn(sn)[0].offsetHeight<=w&&xe()},g.fitToSectionDelay))}}function xe(){x&&(E=!0,ze(Rn(sn)[0]),E=!1)}function Ae(e){if(d.m[e]){var t="down"===e?le:ie;if(S.scrollHorizontally&&(t=S.scrollHorizontally.getScrollSection(e,t)),g.scrollOverflow){var n=g.scrollOverflowHandler.scrollable(Rn(sn)[0]),o="down"===e?"bottom":"top";if(null!=n){if(!g.scrollOverflowHandler.isScrolled(o,n))return!0;t()}else t()}else t()}}function Le(e){g.autoScrolling&&Te(e)&&d.m.up&&no(e)}function Me(e){var t=Kn(e.target,an)||Rn(sn)[0];if(Te(e)){g.autoScrolling&&no(e);var n=Ct(e);G=n.y,F=n.x,Rn(yn,t).length&&Math.abs(Z-F)>Math.abs(V-G)?!a&&Math.abs(Z-F)>Ut.innerWidth/100*g.touchSensitivity&&(F<Z?d.m.right&&ce(t):d.m.left&&ue(t)):g.autoScrolling&&x&&Math.abs(V-G)>Ut.innerHeight/100*g.touchSensitivity&&(G<V?Ae("down"):V<G&&Ae("up"))}}function Te(e){return void 0===e.pointerType||"mouse"!=e.pointerType}function Oe(e){if(g.fitToSection&&(z=!1),Te(e)){var t=Ct(e);V=t.y,Z=t.x}}function ke(e,t){for(var n=0,o=e.slice(Math.max(e.length-t,1)),r=0;r<o.length;r++)n+=o[r];return Math.ceil(n/t)}function Ce(e){var t=(new Date).getTime(),n=zn(Rn(".fp-completely")[0],fn);if(!d.m.down&&!d.m.up)return no(e),!1;if(g.autoScrolling&&!c&&!n){var o=(e=e||Ut.event).wheelDelta||-e.deltaY||-e.detail,r=Math.max(-1,Math.min(1,o)),i=void 0!==e.wheelDeltaX||void 0!==e.deltaX,l=Math.abs(e.wheelDeltaX)<Math.abs(e.wheelDelta)||Math.abs(e.deltaX)<Math.abs(e.deltaY)||!i;149<u.length&&u.shift(),u.push(Math.abs(o)),g.scrollBar&&no(e);var a=t-U;if(U=t,200<a&&(u=[]),x&&!Pt()){var s=ke(u,10);ke(u,70)<=s&&l&&Ae(r<0?"down":"up")}return!1}g.fitToSection&&(z=!1)}function He(e,t){var n=null==t?Rn(sn)[0]:t,o=Rn(yn,n)[0];if(!(null==o||Pt()||a||Rn(mn,o).length<2)){var r=Rn(Sn,o)[0],i=null;if(null==(i="left"===e?jn(r,mn):Pn(r,mn))){if(!g.loopHorizontal)return;var l=to(r);i="left"===e?l[l.length-1]:l[0]}a=!S.test.isTesting,st(o,i,e)}}function Re(){for(var e=Rn(Sn),t=0;t<e.length;t++)Ht(e[t],"internal")}function Ie(e){var t=e.offsetHeight,n=e.offsetTop,o=n,r=Nt("dragAndMove")&&S.dragAndMove.isGrabbing?S.dragAndMove.isScrollingDown():_<n,i=o-w+t,l=g.bigSectionsDestination;return w<t?(r||l)&&"bottom"!==l||(o=i):(r||E&&null==Yn(e))&&(o=i),g.offsetSections&&S.offsetSections&&(o=S.offsetSections.getSectionPosition(r,o,e)),_=o}function ze(e,t,n){if(null!=e){var o,r,i={element:e,callback:t,isMovementUp:n,dtop:Ie(e),yMovement:mt(e),anchorLink:e.getAttribute("data-anchor"),sectionIndex:Xn(e,an),activeSlide:Rn(Sn,e)[0],activeSection:Rn(sn)[0],leavingSection:Xn(Rn(sn),an)+1,localIsResizing:E};if(!(i.activeSection==e&&!E||g.scrollBar&&eo()===i.dtop&&!zn(e,dn))){if(null!=i.activeSlide&&(o=i.activeSlide.getAttribute("data-anchor"),r=Xn(i.activeSlide)),!i.localIsResizing){var l=i.yMovement;if(void 0!==n&&(l=n?"up":"down"),i.direction=l,oo(g.onLeave)&&!1===Be("onLeave",i))return}var a;jt("parallax","apply",i),jt("cards","apply",i),g.autoScrolling&&g.continuousVertical&&void 0!==i.isMovementUp&&(!i.isMovementUp&&"up"==i.yMovement||i.isMovementUp&&"down"==i.yMovement)&&((s=i).isMovementUp?qn(Rn(sn)[0],co(s.activeSection,an)):$n(Rn(sn)[0],uo(s.activeSection,an).reverse()),Rt(Rn(sn)[0].offsetTop),Re(),s.wrapAroundElements=s.activeSection,s.dtop=s.element.offsetTop,s.yMovement=mt(s.element),s.leavingSection=Xn(s.activeSection,an)+1,s.sectionIndex=Xn(s.element,an),ro(Rn(Jt)[0],"onContinuousVertical",s),i=s),Nt("scrollOverflowReset")&&S.scrollOverflowReset.setPrevious(i.activeSection),i.localIsResizing||Ze(i.activeSection),g.scrollOverflow&&g.scrollOverflowHandler.beforeLeave(),Gn(e,nn),Fn(to(e),nn),De(e),g.scrollOverflow&&g.scrollOverflowHandler.onLeave(),x=S.test.isTesting,Lt(r,o,i.anchorLink,i.sectionIndex),function(e){if(g.css3&&g.autoScrolling&&!g.scrollBar){var t="translate3d(0px, -"+Math.round(e.dtop)+"px, 0px)";wt(t,!0),g.scrollingSpeed?(clearTimeout(p),p=setTimeout(function(){We(e)},g.scrollingSpeed)):We(e)}else{var n=Pe(e.dtop);S.test.top=-e.dtop+"px",Xt(n.element,n.options,g.scrollingSpeed,function(){g.scrollBar?setTimeout(function(){We(e)},30):We(e)})}}(i),b=i.anchorLink,gt(i.anchorLink,null==(a=i).wrapAroundElements?a.sectionIndex:a.isMovementUp?Rn(an).length-1:0)}}var s}function Be(e,t){var n,o,r,i,l=(o=e,r=t,(i=g.v2compatible?{afterRender:function(){return[y]},onLeave:function(){return[r.activeSection,r.leavingSection,r.sectionIndex+1,r.direction]},afterLoad:function(){return[r.element,r.anchorLink,r.sectionIndex+1]},afterSlideLoad:function(){return[r.destiny,r.anchorLink,r.sectionIndex+1,r.slideAnchor,r.slideIndex]},onSlideLeave:function(){return[r.prevSlide,r.anchorLink,r.sectionIndex+1,r.prevSlideIndex,r.direction,r.slideIndex]}}:{afterRender:function(){return{section:Ne(Rn(sn)[0]),slide:je(Rn(Sn,Rn(sn)[0])[0])}},onLeave:function(){return{origin:Ne(r.activeSection),destination:Ne(r.element),direction:r.direction}},afterLoad:function(){return i.onLeave()},afterSlideLoad:function(){return{section:Ne(r.section),origin:je(r.prevSlide),destination:je(r.destiny),direction:r.direction}},onSlideLeave:function(){return i.afterSlideLoad()}})[o]());if(g.v2compatible){if(!1===g[e].apply(l[0],l.slice(1)))return!1}else if(ro(y,e,l),!1===g[e].apply(l[Object.keys(l)[0]],(n=l,Object.keys(n).map(function(e){return n[e]}))))return!1;return!0}function Ne(e){return e?new Gt(e):null}function je(e){return e?new Ft(e):null}function Pe(e){var t={};return g.autoScrolling&&!g.scrollBar?(t.options=-e,t.element=Rn(Jt)[0]):(t.options=e,t.element=Ut),t}function We(e){var t;null!=(t=e).wrapAroundElements&&(t.isMovementUp?qn(Rn(an)[0],t.wrapAroundElements):$n(Rn(an)[Rn(an).length-1],t.wrapAroundElements),Rt(Rn(sn)[0].offsetTop),Re(),t.sectionIndex=Xn(t.element,an),t.leavingSection=Xn(t.activeSection,an)+1),oo(g.afterLoad)&&!e.localIsResizing&&Be("afterLoad",e),g.scrollOverflow&&g.scrollOverflowHandler.afterLoad(),jt("parallax","afterLoad"),Nt("scrollOverflowReset")&&S.scrollOverflowReset.reset(),Nt("resetSliders")&&S.resetSliders.apply(e),e.localIsResizing||Xe(e.element),Gn(e.element,rn),Fn(to(e.element),rn),x=!0,oo(e.callback)&&e.callback()}function Ye(e,t){e.setAttribute(t,e.getAttribute("data-"+t)),e.removeAttribute("data-"+t)}function De(e){g.lazyLoading&&Rn("img[data-src], img[data-srcset], source[data-src], source[data-srcset], video[data-src], audio[data-src], iframe[data-src]",Ge(e)).forEach(function(n){if(["src","srcset"].forEach(function(e){var t=n.getAttribute("data-"+e);null!=t&&t&&Ye(n,e)}),io(n,"source")){var e=Kn(n,"video, audio");e&&e.load()}})}function Xe(e){var t=Ge(e);Rn("video, audio",t).forEach(function(e){e.hasAttribute("data-autoplay")&&"function"==typeof e.play&&e.play()}),Rn('iframe[src*="youtube.com/embed/"]',t).forEach(function(e){e.hasAttribute("data-autoplay")&&Ve(e),e.onload=function(){e.hasAttribute("data-autoplay")&&Ve(e)}})}function Ve(e){e.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}',"*")}function Ze(e){var t=Ge(e);Rn("video, audio",t).forEach(function(e){e.hasAttribute("data-keepplaying")||"function"!=typeof e.pause||e.pause()}),Rn('iframe[src*="youtube.com/embed/"]',t).forEach(function(e){/youtube\.com\/embed\//.test(e.getAttribute("src"))&&!e.hasAttribute("data-keepplaying")&&e.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*")})}function Ge(e){var t=Rn(Sn,e);return t.length&&(e=t[0]),e}function Fe(e){var c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";function o(e){var t,n,o,r,i,l,a="",s=0;for(e=e.replace(/[^A-Za-z0-9+/=]/g,"");s<e.length;)t=c.indexOf(e.charAt(s++))<<2|(r=c.indexOf(e.charAt(s++)))>>4,n=(15&r)<<4|(i=c.indexOf(e.charAt(s++)))>>2,o=(3&i)<<6|(l=c.indexOf(e.charAt(s++))),a+=String.fromCharCode(t),64!=i&&(a+=String.fromCharCode(n)),64!=l&&(a+=String.fromCharCode(o));return a=function(e){for(var t,n="",o=0,r=0,i=0;o<e.length;)(r=e.charCodeAt(o))<128?(n+=String.fromCharCode(r),o++):191<r&&r<224?(i=e.charCodeAt(o+1),n+=String.fromCharCode((31&r)<<6|63&i),o+=2):(i=e.charCodeAt(o+1),t=e.charCodeAt(o+2),n+=String.fromCharCode((15&r)<<12|(63&i)<<6|63&t),o+=3);return n}(a)}function r(e){return e.slice(3).slice(0,-3)}return function(e){var t=e.split("_");if(1<t.length){var n=t[1];return e.replace(r(t[1]),"").split("_")[0]+"_"+o(n.slice(3).slice(0,-3))}return r(e)}(o(e))}function Ue(e){var t=function(){if(_t.domain.length){for(var e=_t.domain.replace(/^(www\.)/,"").split(".");2<e.length;)e.shift();return e.join(".").replace(/(^\.*)|(\.*$)/g,"")}return""}(),n=["MTM0bG9jYWxob3N0MjM0","MTM0MC4xMjM0","MTM0anNoZWxsLm5ldDIzNA==","UDdDQU5ZNlNN"],o=Fe(n[0]),r=Fe(n[1]),i=Fe(n[2]),l=Fe(n[3]),a=[o,r,i].indexOf(t)<0&&0!==t.length,s=void 0!==P[e]&&P[e].length;if(!s&&a)return!1;var c=s?Fe(P[e]):"",u=1<(c=c.split("_")).length&&-1<c[1].indexOf(e,c[1].length-e.length);return!(c[0].indexOf(t,c[0].length-t.length)<0&&a&&l!=c[0])&&u||!a}function _e(e){e.forEach(function(e){e.removedNodes[0]&&e.removedNodes[0].isEqualNode(Y)&&(clearTimeout(D),D=setTimeout(Qe,900))})}function Qe(){C=!1}function Je(e){Y=_t.createElement("div"),W=Fe("MTIzPGRpdj48YSBocmVmPSJodHRwOi8vYWx2YXJvdHJpZ28uY29tL2Z1bGxQYWdlL2V4dGVuc2lvbnMvIiBzdHlsZT0iY29sb3I6ICNmZmYgIWltcG9ydGFudDsgdGV4dC1kZWNvcmF0aW9uOm5vbmUgIWltcG9ydGFudDsiPlVubGljZW5zZWQgZnVsbFBhZ2UuanMgRXh0ZW5zaW9uPC9hPjwvZGl2PjEyMw=="),Y.innerHTML=W,Y=Y.firstChild,"MutationObserver"in Ut&&new MutationObserver(_e).observe(_t.body,{childList:!0,subtree:!1}),Nt(e)&&S[e]&&(Ue(e)||(Ke(),setInterval(Ke,2e3)))}function Ke(){Y&&(C||(Math.random()<.5?fo(m,Y):Un(Y,m),C=!0),Y.setAttribute("style",Fe("MTIzei1pbmRleDo5OTk5OTk5O3Bvc2l0aW9uOmZpeGVkO3RvcDoyMHB4O2JvdHRvbTphdXRvO2xlZnQ6MjBweDtyaWdodDphdXRvO2JhY2tncm91bmQ6cmVkO3BhZGRpbmc6N3B4IDE1cHg7Zm9udC1zaXplOjE0cHg7Zm9udC1mYW1pbHk6YXJpYWw7Y29sb3I6I2ZmZjtkaXNwbGF5OmlubGluZS1ibG9jazt0cmFuc2Zvcm06dHJhbnNsYXRlM2QoMCwwLDApO29wYWNpdHk6MTtoZWlnaHQ6YXV0bzt3aWR0aDphdXRvO3pvb206MTttYXJnaW46YXV0bztib3JkZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7Y2xpcC1wYXRoOm5vbmU7MTIz").replace(/;/g,Fe("MTIzICFpbXBvcnRhbnQ7MzQ1"))))}function $e(){var e=et(),t=e.section,n=e.slide;t&&(g.animateAnchor?xt(t,n):ae(t,n))}function qe(){if(!X&&!g.lockAnchors){var e=et(),t=e.section,n=e.slide,o=void 0===b,r=void 0===b&&void 0===n&&!a;if(t&&t.length){var i=!Nt("dragAndMove")||l;(t&&t!==b&&!o||r||!a&&l!=n&&i)&&xt(t,n)}}}function et(){var e,t,n=Ut.location.hash;if(n.length){var o=n.replace("#","").split("/"),r=-1<n.indexOf("#/");e=r?"/"+o[1]:decodeURIComponent(o[0]);var i=r?o[2]:o[1];i&&i.length&&(t=decodeURIComponent(i))}return{section:e,slide:t}}function tt(e){clearTimeout(M);var t=_t.activeElement,n=e.keyCode;9===n?function(e){var t,n,o,r,i,l,a,s=e.shiftKey,c=_t.activeElement,u=it(Ge(Rn(sn)[0]));function d(e){return no(e),u[0]?u[0].focus():null}(t=e,n=it(_t),o=n.indexOf(_t.activeElement),r=t.shiftKey?o-1:o+1,i=n[r],l=je(Kn(i,mn)),a=Ne(Kn(i,an)),l||a)&&(c?null==Kn(c,sn+","+sn+" "+Sn)&&(c=d(e)):d(e),(!s&&c==u[u.length-1]||s&&c==u[0])&&no(e))}(e):io(t,"textarea")||io(t,"input")||io(t,"select")||"true"===t.getAttribute("contentEditable")||""===t.getAttribute("contentEditable")||!g.keyboardScrolling||!g.autoScrolling||(-1<[40,38,32,33,34].indexOf(n)&&no(e),c=e.ctrlKey,M=setTimeout(function(){!function(e){var t=e.shiftKey;if(x||!([37,39].indexOf(e.keyCode)<0))switch(e.keyCode){case 38:case 33:d.k.up&&ie();break;case 32:if(t&&d.k.up){ie();break}case 40:case 34:d.k.down&&le();break;case 36:d.k.up&&se(1);break;case 35:d.k.down&&se(Rn(an).length);break;case 37:d.k.left&&ue();break;case 39:d.k.right&&ce()}}(e)},150))}function nt(e){s&&(c=e.ctrlKey)}function ot(e){2==e.which&&(Q=e.pageY,y.addEventListener("mousemove",at))}function rt(e){2==e.which&&y.removeEventListener("mousemove",at)}function it(e){return[].slice.call(Rn(H,e)).filter(function(e){return"-1"!==e.getAttribute("tabindex")&&null!==e.offsetParent})}function lt(){c=s=!1}function at(e){x&&(e.pageY<Q&&d.m.up?ie():e.pageY>Q&&d.m.down&&le()),Q=e.pageY}function st(e,t,n){var o=Kn(e,an),r={slides:e,destiny:t,direction:n,destinyPos:{left:t.offsetLeft},slideIndex:Xn(t),section:o,sectionIndex:Xn(o,an),anchorLink:o.getAttribute("data-anchor"),slidesNav:Rn(Ln,o)[0],slideAnchor:Tt(t),prevSlide:Rn(Sn,o)[0],prevSlideIndex:Xn(Rn(Sn,o)[0]),localIsResizing:E};r.xMovement=St(r.prevSlideIndex,r.slideIndex),r.direction=r.direction?r.direction:r.xMovement,r.localIsResizing||(x=!1),jt("parallax","applyHorizontal",r),jt("cards","apply",r),g.onSlideLeave&&!r.localIsResizing&&"none"!==r.xMovement&&oo(g.onSlideLeave)&&!1===Be("onSlideLeave",r)?a=!1:(Gn(t,nn),Fn(to(t),nn),r.localIsResizing||(Ze(r.prevSlide),De(t)),ct(r),zn(o,nn)&&!r.localIsResizing&&Lt(r.slideIndex,r.slideAnchor,r.anchorLink,r.sectionIndex),S.continuousHorizontal&&S.continuousHorizontal.apply(r),Wt()?ut(r):dt(e,r,!0),g.interlockedSlides&&S.interlockedSlides&&(Nt("continuousHorizontal")&&void 0!==n&&n!==r.xMovement||S.interlockedSlides.apply(r)))}function ct(e){!g.loopHorizontal&&g.controlArrows&&(lo(Rn(kn,e.section),0!==e.slideIndex),lo(Rn(Cn,e.section),null!=Yn(e.destiny)))}function ut(e){var t,n;S.continuousHorizontal&&S.continuousHorizontal.afterSlideLoads(e),t=e.slidesNav,n=e.slideIndex,g.slidesNavigation&&null!=t&&(Fn(Rn(on,t),nn),Gn(Rn("a",Rn("li",t)[n]),nn)),e.localIsResizing||(jt("parallax","afterSlideLoads"),jt("scrollOverflowReset","setPrevious",e.prevSlide),jt("scrollOverflowReset","reset"),oo(g.afterSlideLoad)&&Be("afterSlideLoad",e),x=!0,Xe(e.destiny)),a=!1,Nt("interlockedSlides")&&S.interlockedSlides.apply(e)}function dt(e,t,n){var o=t.destinyPos;if(g.css3){var r="translate3d(-"+Math.round(o.left)+"px, 0px, 0px)";S.test.translate3dH[t.sectionIndex]=r,Nn(pt(Rn(En,e)),It(r)),h=setTimeout(function(){n&&ut(t)},g.scrollingSpeed)}else S.test.left[t.sectionIndex]=Math.round(o.left),Xt(e,Math.round(o.left),g.scrollingSpeed,function(){n&&ut(t)})}function ft(){if(ro(y,"onResize"),vt(),o){var e=_t.activeElement;if(!io(e,"textarea")&&!io(e,"input")&&!io(e,"select")){var t=Bn();Math.abs(t-J)>20*Math.max(J,t)/100&&(v=setTimeout(function(){de(!0),J=t},navigator.userAgent.match("CriOS")?50:0))}}else clearTimeout(v),v=setTimeout(function(){de(!0)},350)}function vt(){var e=g.responsive||g.responsiveWidth,t=g.responsiveHeight,n=e&&Ut.innerWidth<e,o=t&&Ut.innerHeight<t;e&&t?fe(n||o):e?fe(n):t&&fe(o)}function pt(e){var t="all "+g.scrollingSpeed+"ms "+g.easingcss3;return Fn(e,$t),Nn(e,{"-webkit-transition":t,transition:t})}function ht(e){return Gn(e,$t)}function gt(e,t){var n,o,r,i;n=e,Rn(g.menu).forEach(function(e){g.menu&&null!=e&&(Fn(Rn(on,e),nn),Gn(Rn('[data-menuanchor="'+n+'"]',e),nn))}),o=e,r=t,i=Rn(pn)[0],g.navigation&&null!=i&&"none"!==i.style.display&&(Fn(Rn(on,Rn(pn)[0]),nn),Gn(o?Rn('a[href="#'+o+'"]',Rn(pn)[0]):Rn("a",Rn("li",Rn(pn)[0])[r]),nn))}function mt(e){var t=Xn(Rn(sn)[0],an),n=Xn(e,an);return t==n?"none":n<t?"up":"down"}function St(e,t){return e==t?"none":t<e?"left":"right"}function bt(e){if(!zn(e,xn)){var t=_t.createElement("div");t.className=cn,t.style.height=yt(e)+"px",Gn(e,xn),Qn(e,t)}}function yt(e){var t=Se(e);if(g.paddingTop||g.paddingBottom){var n=e;zn(n,ln)||(n=Kn(e,an)),t-=parseInt(getComputedStyle(n)["padding-top"])+parseInt(getComputedStyle(n)["padding-bottom"])}return t}function wt(e,t){t?pt(y):ht(y),clearTimeout(T),Nn(y,It(e)),S.test.translate3d=e,T=setTimeout(function(){Fn(y,$t)},10)}function Et(e){var t=Rn(an+'[data-anchor="'+e+'"]',y)[0];if(!t){var n=void 0!==e?e-1:0;t=Rn(an)[n]}return t}function xt(e,t){var n=Et(e);if(null!=n){var o,r,i,l=(null==(i=Rn(mn+'[data-anchor="'+(o=t)+'"]',r=n)[0])&&(o=void 0!==o?o:0,i=Rn(mn,r)[o]),i);Tt(n)===b||zn(n,nn)?At(l):ze(n,function(){At(l)})}}function At(e){null!=e&&st(Kn(e,yn),e)}function Lt(e,t,n,o){var r="";g.anchors.length&&!g.lockAnchors&&(e?(null!=n&&(r=n),null==t&&(t=e),Mt(r+"/"+(l=t))):(null!=e&&(l=t),Mt(n))),Ot()}function Mt(e){if(g.recordHistory)location.hash=e;else if(o||i)Ut.history.replaceState(void 0,void 0,"#"+e);else{var t=Ut.location.href.split("#")[0];Ut.location.replace(t+"#"+e)}}function Tt(e){if(!e)return null;var t=e.getAttribute("data-anchor"),n=Xn(e);return null==t&&(t=n),t}function Ot(){var e=Rn(sn)[0],t=Rn(Sn,e)[0],n=Tt(e),o=Tt(t),r=String(n);t&&(r=r+"-"+o),r=r.replace("/","-").replace("#","");var i=new RegExp("\\b\\s?"+tn+"-[^\\s]+\\b","g");m.className=m.className.replace(i,""),Gn(m,tn+"-"+r)}function kt(){return Ut.PointerEvent?{down:"pointerdown",move:"pointermove"}:{down:"MSPointerDown",move:"MSPointerMove"}}function Ct(e){var t=[];return t.y=void 0!==e.pageY&&(e.pageY||e.pageX)?e.pageY:e.touches[0].pageY,t.x=void 0!==e.pageX&&(e.pageY||e.pageX)?e.pageX:e.touches[0].pageX,i&&Te(e)&&g.scrollBar&&void 0!==e.touches&&(t.y=e.touches[0].pageY,t.x=e.touches[0].pageX),t}function Ht(e,t){q(0,"internal"),void 0!==t&&(E=!0),st(Kn(e,yn),e),void 0!==t&&(E=!1),q(B.scrollingSpeed,"internal")}function Rt(e){var t=Math.round(e);if(g.css3&&g.autoScrolling&&!g.scrollBar)wt("translate3d(0px, -"+t+"px, 0px)",!1);else if(g.autoScrolling&&!g.scrollBar)Nn(y,{top:-t+"px"}),S.test.top=-t+"px";else{var n=Pe(t);Vt(n.element,n.options)}}function It(e){return{"-webkit-transform":e,"-moz-transform":e,"-ms-transform":e,transform:e}}function zt(t,e,n){"all"!==e?d[n][e]=t:Object.keys(d[n]).forEach(function(e){d[n][e]=t})}function Bt(e){return Nn(e,{"-webkit-transition":"none",transition:"none"})}function Nt(e){return null!==g[e]&&"[object Array]"===Object.prototype.toString.call(g[e])?g[e].length&&S[e]:g[e]&&S[e]}function jt(e,t,n){if(Nt(e))return S[e][t](n)}function Pt(){return Nt("dragAndMove")&&S.dragAndMove.isAnimating}function Wt(){return Nt("dragAndMove")&&S.dragAndMove.isGrabbing}function Yt(e,t,n){g[e]=t,"internal"!==n&&(B[e]=t)}function Dt(){t||(Hn("error","Fullpage.js version 3 has changed its license to GPLv3 and it requires a `licenseKey` option. Read about it here:"),Hn("error","https://github.com/alvarotrigo/fullPage.js#options.")),zn(Rn("html"),en)?Hn("error","Fullpage.js can only be initialized once and you are doing it multiple times!"):(g.continuousVertical&&(g.loopTop||g.loopBottom)&&(g.continuousVertical=!1,Hn("warn","Option `loopTop/loopBottom` is mutually exclusive with `continuousVertical`; `continuousVertical` disabled")),!g.scrollOverflow||!g.scrollBar&&g.autoScrolling||Hn("warn","Options scrollBar:true and autoScrolling:false are mutually exclusive with scrollOverflow:true. Sections with scrollOverflow might not work well in Firefox"),!g.continuousVertical||!g.scrollBar&&g.autoScrolling||(g.continuousVertical=!1,Hn("warn","Scroll bars (`scrollBar:true` or `autoScrolling:false`) are mutually exclusive with `continuousVertical`; `continuousVertical` disabled")),g.scrollOverflow&&null==g.scrollOverflowHandler&&(g.scrollOverflow=!1,Hn("error","The option `scrollOverflow:true` requires the file `scrolloverflow.min.js`. Please include it before fullPage.js.")),g.anchors.forEach(function(t){var e=[].slice.call(Rn("[name]")).filter(function(e){return e.getAttribute("name")&&e.getAttribute("name").toLowerCase()==t.toLowerCase()}),n=[].slice.call(Rn("[id]")).filter(function(e){return e.getAttribute("id")&&e.getAttribute("id").toLowerCase()==t.toLowerCase()});(n.length||e.length)&&(Hn("error","data-anchor tags can not have the same value as any `id` element on the site (or `name` element for IE)."),n.length&&Hn("error",'"'+t+'" is is being used by another element `id` property'),e.length&&Hn("error",'"'+t+'" is is being used by another element `name` property'))}))}function Xt(t,n,o,r){var e,i=(e=t).self!=Ut&&zn(e,bn)?e.scrollLeft:!g.autoScrolling||g.scrollBar?eo():e.offsetTop,l=n-i,a=0;z=!0;var s=function(){if(z){var e=n;a+=20,o&&(e=Ut.fp_easings[g.easing](a,i,l,o)),Vt(t,e),a<o?setTimeout(s,20):void 0!==r&&r()}else a<o&&r()};s()}function Vt(e,t){!g.autoScrolling||g.scrollBar||e.self!=Ut&&zn(e,bn)?e.self!=Ut&&zn(e,bn)?e.scrollLeft=t:e.scrollTo(0,t):e.style.top=t+"px"}function Zt(e,t){this.anchor=e.getAttribute("data-anchor"),this.item=e,this.index=Xn(e,t),this.isLast=this.index===e.parentElement.querySelectorAll(t).length-1,this.isFirst=!this.index}function Gt(e){Zt.call(this,e,an)}function Ft(e){Zt.call(this,e,mn)}Dt()}}),window.jQuery&&window.fullpage&&function(t,n){"use strict";t&&n?t.fn.fullpage=function(e){e.$=t,new n(this[0],e)}:window.fp_utils.showError("error","jQuery is required to use the jQuery fullpage adapter!")}(window.jQuery,window.fullpage);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(5)(
+  /* script */
+  __webpack_require__(2),
+  /* template */
+  __webpack_require__(6),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/Users/alvarotrigolopez/Sites/vue-fullpage.js/src/FullPage.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] FullPage.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _fullpageExtensions = __webpack_require__(0);
+
+var _fullpageExtensions2 = _interopRequireDefault(_fullpageExtensions);
+
+var _constants = __webpack_require__(3);
+
+var constants = _interopRequireWildcard(_constants);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } //
+//
+//
+//
+//
+//
+
+function camelToKebab(string) {
+  return string.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+}
+
+exports.default = {
+  methods: {
+    build: function build() {
+      var slideSelector = this.options.slideSelector || '.slide';
+      var sectionSelector = this.options.sectionSelector || '.section';
+      var activeSectionIndex = fp_utils.index(document.querySelector(sectionSelector + '.active'));
+      var activeSlide = document.querySelector(sectionSelector + '.active ' + slideSelector + '.active');
+      var activeSlideIndex = activeSlide ? fp_utils.index(activeSlide) : -1;
+
+      this.destroy();
+
+      if (activeSectionIndex > -1) {
+        fp_utils.addClass(document.querySelectorAll(sectionSelector)[activeSectionIndex], 'active');
+      }
+
+      if (activeSlideIndex > -1) {
+        fp_utils.addClass(activeSlide, 'active');
+      }
+
+      this.init();
+    },
+    destroy: function destroy() {
+      if (typeof fullpage_api !== 'undefined' && typeof fullpage_api.destroy !== 'undefined') {
+        fullpage_api.destroy('all');
+      }
+    },
+    emitEvent: function emitEvent(name, args) {
+      // Emit event on Vue way
+      this.$emit.apply(this, [camelToKebab(name)].concat(_toConsumableArray(args)));
+
+      // Run event's handler with non Vue way
+      if (this.options.hasOwnProperty(name)) {
+        this.options[name].apply(this, args);
+      }
+    },
+    init: function init() {
+      this.api = new _fullpageExtensions2.default(this.$refs.fullpage, this.options);
+    }
+  },
+  mounted: function mounted() {
+    this.init();
+  },
+  beforeDestroy: function beforeDestroy() {
+    if (typeof this.api !== 'undefined') {
+      this.destroy();
+    }
+  },
+  data: function data() {
+    var _this = this;
+
+    return {
+      events: constants.EVENTS.reduce(function (eventsHandlers, event) {
+        return _extends({}, eventsHandlers, _defineProperty({}, event, function () {
+          for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+
+          _this.emitEvent(event, args);
+        }));
+      }, {}),
+      api: undefined
+    };
+  },
+
+  props: {
+    options: {
+      type: Object,
+      required: true
+    }
+  },
+  watch: {
+    options: {
+      deep: true,
+      handler: function handler() {
+        this.build();
+      }
+    }
+  }
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var EVENTS = exports.EVENTS = ['afterLoad', 'onLeave', 'afterRender', 'afterResize', 'afterResponsive', 'afterSlideLoad', 'onSlideLeave'];
+
+var METHODS = exports.METHODS = ['moveSectionUp', 'moveSectionDown', 'moveTo', 'silentMoveTo', 'moveSlideRight', 'moveSlideLeft', 'setAutoScrolling', 'setFitToSection', 'fitToSection', 'setLockAnchors', 'setAllowScrolling', 'setKeyboardScrolling', 'setRecordHistory', 'setScrollingSpeed', 'destroy', 'reBuild', 'setResponsive', 'responsiveSlidesToSections', 'responsiveSlidesToSlides'];
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.version = exports.FullPage = undefined;
+
+var _FullPage = __webpack_require__(1);
+
+var _FullPage2 = _interopRequireDefault(_FullPage);
+
+var _fullpageExtensions = __webpack_require__(0);
+
+var _fullpageExtensions2 = _interopRequireDefault(_fullpageExtensions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function plugin(Vue) {
+  Vue.component('full-page', _FullPage2.default);
+}
+
+// Install by default if using the script tag
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(plugin);
+}
+if (!window.fullpage_api) {
+  window.fullpage = _fullpageExtensions2.default;
+}
+
+exports.default = plugin;
+
+var version = '__VERSION__';
+// Export all components too
+exports.FullPage = _FullPage2.default;
+exports.version = version;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+/* globals __VUE_SSR_CONTEXT__ */
+
+// this module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle
+
+module.exports = function normalizeComponent (
+  rawScriptExports,
+  compiledTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier /* server only */
+) {
+  var esModule
+  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+  // ES6 modules interop
+  var type = typeof rawScriptExports.default
+  if (type === 'object' || type === 'function') {
+    esModule = rawScriptExports
+    scriptExports = rawScriptExports.default
+  }
+
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (compiledTemplate) {
+    options.render = compiledTemplate.render
+    options.staticRenderFns = compiledTemplate.staticRenderFns
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = injectStyles
+  }
+
+  if (hook) {
+    var functional = options.functional
+    var existing = functional
+      ? options.render
+      : options.beforeCreate
+    if (!functional) {
+      // inject component registration as beforeCreate hook
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    } else {
+      // register for functioal component in vue file
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return existing(h, context)
+      }
+    }
+  }
+
+  return {
+    esModule: esModule,
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    ref: "fullpage"
+  }, [_vm._t("default")], 2)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {}
+
+/***/ })
+/******/ ]);
+});
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/CarouselComponent.vue?vue&type=template&id=e3616054&scoped=true&":
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/CarouselComponent.vue?vue&type=template&id=e3616054&scoped=true& ***!
@@ -38347,11 +41390,7 @@ var render = function() {
             _vm._l(_vm.icons, function(icon) {
               return _c(
                 "v-btn",
-                {
-                  key: icon,
-                  staticClass: "mx-3 white--text",
-                  attrs: { icon: "" }
-                },
+                { staticClass: "mx-3 white--text", attrs: { icon: "" } },
                 [
                   _c("v-icon", { attrs: { size: "24px" } }, [
                     _vm._v(_vm._s(icon))
@@ -38406,118 +41445,142 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container", attrs: { id: "item-1" } },
     [
       _c(
-        "v-layout",
-        { attrs: { row: "" } },
-        _vm._l(6, function(n) {
-          return _c(
-            "v-flex",
+        "v-container",
+        [
+          _c(
+            "h2",
             {
-              staticClass: "goodsPadding",
-              attrs: { xs12: "", sm12: "", md6: "" }
+              staticClass: "funny-title section-title",
+              staticStyle: { "margin-top": "150px !important" },
+              attrs: { id: "item-1" }
             },
-            [
-              _c(
-                "v-card",
+            [_vm._v("Товары LAMZAK")]
+          ),
+          _vm._v(" "),
+          _c(
+            "v-layout",
+            { attrs: { row: "" } },
+            _vm._l(3, function(n) {
+              return _c(
+                "v-flex",
+                {
+                  staticClass: "goodsPadding",
+                  attrs: { xs12: "", sm6: "", md4: "" }
+                },
                 [
-                  _c(
-                    "v-img",
-                    {
-                      staticClass: "white--text",
-                      attrs: {
-                        height: "200px",
-                        src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                      }
-                    },
-                    [
-                      _c(
-                        "v-container",
-                        { attrs: { "fill-height": "", fluid: "" } },
-                        [
-                          _c(
-                            "v-layout",
-                            { attrs: { "fill-height": "" } },
-                            [
-                              _c(
-                                "v-flex",
-                                {
-                                  attrs: {
-                                    xs12: "",
-                                    "align-end": "",
-                                    flexbox: ""
-                                  }
-                                },
-                                [
-                                  _c("span", { staticClass: "headline" }, [
-                                    _vm._v("Top 10 Australian beaches")
+                  _c("v-hover", {
+                    scopedSlots: _vm._u(
+                      [
+                        {
+                          key: "default",
+                          fn: function(ref) {
+                            var hover = ref.hover
+                            return _c(
+                              "v-card",
+                              { class: "elevation-" + (hover ? 12 : 2) },
+                              [
+                                _c(
+                                  "v-img",
+                                  {
+                                    staticClass: "white--text",
+                                    attrs: {
+                                      height: "200px",
+                                      src:
+                                        "http://itd2.mycdn.me/image?id=837108783773&t=20&plc=WEB&tkn=*HuMZyeIoRvJN0x22q0H4vwZATHA"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "v-container",
+                                      {
+                                        attrs: { "fill-height": "", fluid: "" }
+                                      },
+                                      [
+                                        _c(
+                                          "v-layout",
+                                          { attrs: { "fill-height": "" } },
+                                          [
+                                            _c(
+                                              "v-flex",
+                                              {
+                                                attrs: {
+                                                  xs12: "",
+                                                  "align-end": "",
+                                                  flexbox: ""
+                                                }
+                                              },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "headline" },
+                                                  [_vm._v("Lamzak")]
+                                                )
+                                              ]
+                                            )
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c("v-card-title", [
+                                  _c("div", [
+                                    _c("span", { staticClass: "grey--text" }, [
+                                      _vm._v("Number 10")
+                                    ]),
+                                    _c("br"),
+                                    _vm._v(" "),
+                                    _c("span", [_vm._v("Whitehaven Beach")]),
+                                    _c("br"),
+                                    _vm._v(" "),
+                                    _c("span", [
+                                      _vm._v(
+                                        "Whitsunday Island, Whitsunday Islands"
+                                      )
+                                    ])
                                   ])
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-title", [
-                    _c("div", [
-                      _c("span", { staticClass: "grey--text" }, [
-                        _vm._v("Number 10")
-                      ]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("Whitehaven Beach")]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [
-                        _vm._v("Whitsunday Island, Whitsunday Islands")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-actions",
-                    [
-                      _c("v-btn", { attrs: { flat: "", color: "orange" } }, [
-                        _vm._v("Купить")
-                      ]),
-                      _vm._v(" "),
-                      _c("v-btn", { attrs: { flat: "", color: "orange" } }, [
-                        _vm._v("Подробнее о товаре")
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "text-xs-center" },
-                        [
-                          _c("v-rating", {
-                            model: {
-                              value: _vm.rating,
-                              callback: function($$v) {
-                                _vm.rating = $$v
-                              },
-                              expression: "rating"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "v-card-actions",
+                                  [
+                                    _c(
+                                      "v-btn",
+                                      { attrs: { flat: "", color: "success" } },
+                                      [_vm._v("Купить")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-btn",
+                                      { attrs: { flat: "", color: "orange" } },
+                                      [_vm._v("Подробнее о товаре")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          }
+                        }
+                      ],
+                      null,
+                      true
+                    )
+                  })
                 ],
                 1
               )
-            ],
+            }),
             1
           )
-        }),
+        ],
         1
       )
     ],
@@ -38531,10 +41594,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09& ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38664,7 +41727,7 @@ var render = function() {
             },
             [
               _c("v-toolbar-title", {
-                domProps: { textContent: _vm._s("Vuetify") }
+                domProps: { textContent: _vm._s("LAMZAK") }
               })
             ],
             1
@@ -38678,12 +41741,17 @@ var render = function() {
             _vm._l(_vm.menuItems, function(item) {
               return _c(
                 "v-menu",
+                { attrs: { id: "menu" } },
                 [
                   item.icon !== "shop"
                     ? _c(
                         "v-btn",
                         {
-                          attrs: { slot: "activator", href: item.route },
+                          attrs: {
+                            slot: "activator",
+                            "data-menuanchor": item.route,
+                            href: "/#" + item.route
+                          },
                           slot: "activator"
                         },
                         [
@@ -38746,13 +41814,14 @@ var render = function() {
       ),
       _vm._v(" "),
       _c(
-        "div",
-        { staticClass: "text-xs-center" },
+        "v-layout",
+        { attrs: { wrap: "" } },
         [
           _c(
-            "v-dialog",
+            "v-navigation-drawer",
             {
-              attrs: { width: "1000" },
+              staticStyle: { top: "65px" },
+              attrs: { "mini-variant": _vm.mini, fixed: "", right: "" },
               model: {
                 value: _vm.openBasketGoods,
                 callback: function($$v) {
@@ -38763,45 +41832,68 @@ var render = function() {
             },
             [
               _c(
-                "v-card",
+                "v-list",
                 [
-                  _c(
-                    "v-card-title",
-                    {
-                      staticClass: "headline grey lighten-2",
-                      attrs: { "primary-title": "" }
-                    },
-                    [_vm._v("\n                    Корзина\n                ")]
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-text", [
-                    _vm._v(
-                      "\n                    Тут будут храниться товары пользователя\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("v-divider"),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-actions",
-                    [
-                      _c("v-spacer"),
-                      _vm._v(" "),
-                      _c(
-                        "v-btn",
+                  _vm.mini
+                    ? _c(
+                        "v-list-tile",
                         {
-                          attrs: { color: "primary", flat: "" },
                           on: {
                             click: function($event) {
-                              _vm.openBasketGoods = false
+                              $event.stopPropagation()
+                              _vm.mini = !_vm.mini
                             }
                           }
                         },
                         [
-                          _vm._v(
-                            "\n                        Выход\n                    "
+                          _c(
+                            "v-list-tile-action",
+                            [_c("v-icon", [_vm._v("chevron_right")])],
+                            1
                           )
-                        ]
+                        ],
+                        1
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-tile",
+                    { attrs: { avatar: "", tag: "div" } },
+                    [
+                      _c("v-list-tile-avatar", [
+                        _c("img", {
+                          attrs: {
+                            src:
+                              "https://randomuser.me/api/portraits/men/85.jpg"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile-content",
+                        [_c("v-list-tile-title", [_vm._v("John Leider")])],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile-action",
+                        [
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: { icon: "" },
+                              on: {
+                                click: function($event) {
+                                  $event.stopPropagation()
+                                  _vm.mini = !_vm.mini
+                                }
+                              }
+                            },
+                            [_c("v-icon", [_vm._v("chevron_left")])],
+                            1
+                          )
+                        ],
+                        1
                       )
                     ],
                     1
@@ -38844,11 +41936,9 @@ var render = function() {
   return _c(
     "v-app",
     [
-      _c("header-component"),
+      _c("header-component", { staticClass: "header" }),
       _vm._v(" "),
-      _vm.route ? _c("carousel-component") : _vm._e(),
-      _vm._v(" "),
-      _c("v-content", [_c("router-view")], 1),
+      _c("v-content", { staticClass: "content" }, [_c("router-view")], 1),
       _vm._v(" "),
       _c("footer-component")
     ],
@@ -38965,243 +42055,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("goods-component"),
-      _vm._v(" "),
-      _c(
-        "v-container",
-        { attrs: { fluid: "", "grid-list-md": "" } },
-        [
-          _c(
-            "v-layout",
-            { attrs: { row: "", wrap: "" } },
-            [
-              _c(
-                "v-flex",
-                { attrs: { "d-flex": "", xs12: "", sm6: "", md4: "" } },
-                [
-                  _c(
-                    "v-card",
-                    { attrs: { color: "purple", dark: "" } },
-                    [
-                      _c(
-                        "v-card-title",
-                        { staticClass: "title", attrs: { primary: "" } },
-                        [_vm._v("Lorem")]
-                      ),
-                      _vm._v(" "),
-                      _c("v-card-text", [_vm._v(_vm._s(_vm.lorem))])
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-flex",
-                { attrs: { "d-flex": "", xs12: "", sm6: "", md3: "" } },
-                [
-                  _c(
-                    "v-layout",
-                    { attrs: { row: "", wrap: "" } },
-                    [
-                      _c(
-                        "v-flex",
-                        { attrs: { "d-flex": "" } },
-                        [
-                          _c(
-                            "v-card",
-                            { attrs: { color: "indigo", dark: "" } },
-                            [
-                              _c("v-card-text", [
-                                _vm._v(_vm._s(_vm.lorem.slice(0, 70)))
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-flex",
-                        { attrs: { "d-flex": "" } },
-                        [
-                          _c(
-                            "v-layout",
-                            { attrs: { row: "", wrap: "" } },
-                            _vm._l(2, function(n) {
-                              return _c(
-                                "v-flex",
-                                { key: n, attrs: { "d-flex": "", xs12: "" } },
-                                [
-                                  _c(
-                                    "v-card",
-                                    {
-                                      attrs: {
-                                        color: "red lighten-2",
-                                        dark: ""
-                                      }
-                                    },
-                                    [
-                                      _c("v-card-text", [
-                                        _vm._v(_vm._s(_vm.lorem.slice(0, 40)))
-                                      ])
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            }),
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-flex",
-                {
-                  attrs: {
-                    "d-flex": "",
-                    xs12: "",
-                    sm6: "",
-                    md2: "",
-                    "child-flex": ""
-                  }
-                },
-                [
-                  _c(
-                    "v-card",
-                    { attrs: { color: "green lighten-2", dark: "" } },
-                    [
-                      _c("v-card-text", [
-                        _vm._v(_vm._s(_vm.lorem.slice(0, 90)))
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-flex",
-                { attrs: { "d-flex": "", xs12: "", sm6: "", md3: "" } },
-                [
-                  _c(
-                    "v-card",
-                    { attrs: { color: "blue lighten-2", dark: "" } },
-                    [
-                      _c("v-card-text", [
-                        _vm._v(_vm._s(_vm.lorem.slice(0, 100)))
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-parallax",
-        {
-          staticClass: "parallaxHeight",
-          attrs: {
-            dark: "",
-            src: "https://cdn.vuetifyjs.com/images/parallax/material2.jpg",
-            id: "item-3"
-          }
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "container" },
-            [
-              _c(
-                "v-timeline",
-                _vm._l(2, function(n) {
-                  return _c(
-                    "v-timeline-item",
-                    {
-                      key: n,
-                      attrs: { large: "" },
-                      scopedSlots: _vm._u(
-                        [
-                          {
-                            key: "icon",
-                            fn: function() {
-                              return [
-                                _c("v-avatar", [
-                                  _c("img", {
-                                    attrs: { src: "http://i.pravatar.cc/64" }
-                                  })
-                                ])
-                              ]
-                            },
-                            proxy: true
-                          },
-                          {
-                            key: "opposite",
-                            fn: function() {
-                              return [_c("span", [_vm._v("Tus eu perfecto")])]
-                            },
-                            proxy: true
-                          }
-                        ],
-                        null,
-                        true
-                      )
-                    },
-                    [
-                      _vm._v(" "),
-                      _vm._v(" "),
-                      _c(
-                        "v-card",
-                        { staticClass: "elevation-2" },
-                        [
-                          _c("v-card-title", { staticClass: "headline" }, [
-                            _vm._v("Lorem ipsum")
-                          ]),
-                          _vm._v(" "),
-                          _c("v-card-text", [
-                            _vm._v(
-                              "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae."
-                            )
-                          ])
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                }),
-                1
-              )
-            ],
-            1
-          )
-        ]
-      )
-    ],
-    1
-  )
+  return _c("full-page", { attrs: { options: _vm.options } }, [
+    _c("div", { staticClass: "section", attrs: { id: "section1" } }),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "section", attrs: { id: "section2" } },
+      [_c("goods-component")],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "section", attrs: { id: "section3" } })
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -80025,12 +82890,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vuetify__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./bootstrap */ "./resources/assets/js/bootstrap.js");
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_bootstrap__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _views_App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./views/App */ "./resources/assets/js/views/App.vue");
+/* harmony import */ var fullpage_js_vendors_scrolloverflow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! fullpage.js/vendors/scrolloverflow */ "./node_modules/fullpage.js/vendors/scrolloverflow.js");
+/* harmony import */ var fullpage_js_vendors_scrolloverflow__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(fullpage_js_vendors_scrolloverflow__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var vue_fullpage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-fullpage.js */ "./node_modules/vue-fullpage.js/dist/vue-fullpage.js");
+/* harmony import */ var vue_fullpage_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(vue_fullpage_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _views_App__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./views/App */ "./resources/assets/js/views/App.vue");
 
 
+
+
+ // Optional. When using scrollOverflow:true
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuetify__WEBPACK_IMPORTED_MODULE_2___default.a);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_fullpage_js__WEBPACK_IMPORTED_MODULE_5___default.a);
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('header-component', __webpack_require__(/*! ./components/HeaderComponent */ "./resources/assets/js/components/HeaderComponent.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('carousel-component', __webpack_require__(/*! ./components/CarouselComponent */ "./resources/assets/js/components/CarouselComponent.vue")["default"]);
@@ -80039,7 +82912,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('goods-component', __webpac
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
   components: {
-    App: _views_App__WEBPACK_IMPORTED_MODULE_4__["default"]
+    App: _views_App__WEBPACK_IMPORTED_MODULE_6__["default"]
   },
   router: _routers__WEBPACK_IMPORTED_MODULE_1__["default"],
   bootstrap: _bootstrap__WEBPACK_IMPORTED_MODULE_3___default.a
@@ -80339,9 +83212,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _HeaderComponent_vue_vue_type_template_id_2810fc09___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=template&id=2810fc09& */ "./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&");
+/* harmony import */ var _HeaderComponent_vue_vue_type_template_id_2810fc09_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=template&id=2810fc09&scoped=true& */ "./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&scoped=true&");
 /* harmony import */ var _HeaderComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=script&lang=js& */ "./resources/assets/js/components/HeaderComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _HeaderComponent_vue_vue_type_style_index_0_id_2810fc09_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css& */ "./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -80349,13 +83224,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _HeaderComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _HeaderComponent_vue_vue_type_template_id_2810fc09___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _HeaderComponent_vue_vue_type_template_id_2810fc09___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _HeaderComponent_vue_vue_type_template_id_2810fc09_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _HeaderComponent_vue_vue_type_template_id_2810fc09_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "2810fc09",
   null
   
 )
@@ -80381,19 +83256,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09& ***!
-  \*******************************************************************************************/
+/***/ "./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css&":
+/*!*********************************************************************************************************************!*\
+  !*** ./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_style_index_0_id_2810fc09_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/HeaderComponent.vue?vue&type=style&index=0&id=2810fc09&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_style_index_0_id_2810fc09_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_style_index_0_id_2810fc09_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_style_index_0_id_2810fc09_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_style_index_0_id_2810fc09_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_style_index_0_id_2810fc09_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&scoped=true&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&scoped=true& ***!
+  \*******************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_2810fc09___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./HeaderComponent.vue?vue&type=template&id=2810fc09& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_2810fc09___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_2810fc09_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./HeaderComponent.vue?vue&type=template&id=2810fc09&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/HeaderComponent.vue?vue&type=template&id=2810fc09&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_2810fc09_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_2810fc09___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_2810fc09_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

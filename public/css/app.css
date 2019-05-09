@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons);@-webkit-keyframes shake {
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons);@import url(https://fonts.googleapis.com/css?family=Russo+One);@-webkit-keyframes shake {
   59% {
     margin-left: 0;
   }
@@ -10664,6 +10664,38 @@ table.v-table tfoot tr td {
 }
 .v-treeview-node__children {
   transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+}h2.funny-title{
+    border-top:5px solid #E0DBDE;
+    border-bottom:5px solid #E0DBDE;
+    font-size:70px;text-align:center;
+    margin-top:40px;
+    margin-bottom:5px;
+    text-transform:uppercase;
+    font-family:'Russo One',sans-serif;
+    font-weight:900;
+    letter-spacing:8px
+}
+@-webkit-keyframes move-background {
+    0%{background-position:-300px 0}
+    100%{background-position:300px -300px}
+}
+@keyframes move-background {
+    0%{background-position:-300px 0}
+    100%{background-position:300px -300px}
+}
+.section-title{
+    -webkit-animation-play-state:running;
+    animation-play-state:running;
+    color:transparent;
+    background:url(https://obninsksite.ru/assets/theme/images/blog/square.svg) no-repeat #ECE7EA;
+    background-size:cover;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+    -webkit-animation:move-background 20s infinite linear alternate;
+    animation:move-background 20s infinite linear alternate
 }@charset "UTF-8";
 
 /*!

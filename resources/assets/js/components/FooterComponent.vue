@@ -11,7 +11,6 @@
             <v-card-text>
                 <v-btn
                         v-for="icon in icons"
-                        :key="icon"
                         class="mx-3 white--text"
                         icon
                 >

@@ -2,8 +2,11 @@ import Vue from 'vue'
 import router from  './routers';
 import Vuetify from 'vuetify'
 import bootstrap from './bootstrap'
+import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
+import VueFullPage from 'vue-fullpage.js'
 
 Vue.use(Vuetify);
+Vue.use(VueFullPage);
 
 import App from './views/App';
 

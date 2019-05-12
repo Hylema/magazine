@@ -14,10 +14,11 @@ Vue.component('header-component', require('./components/HeaderComponent').defaul
 Vue.component('carousel-component', require('./components/CarouselComponent').default);
 Vue.component('footer-component', require('./components/FooterComponent').default);
 Vue.component('goods-component', require('./components/GoodsComponent').default);
+Vue.component('home-main-component', require('./components/HomeMainComponent').default);
 
 const app = new Vue({
     el: '#app',
     components: { App },
     router,
-    bootstrap
+    bootstrap,
 });

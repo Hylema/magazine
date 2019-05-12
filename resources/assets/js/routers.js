@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router';
 import Hello from './views/Hello'
-import Home from './views/Home'
+import Main from './views/Main'
 import Error from './views/Error.vue'
 
 
@@ -12,8 +12,8 @@ const router = new Router({
     routes: [
         {
             path: '/',
-            name: 'home',
-            component: Home
+            name: 'main',
+            component: Main
         },
         {
             path: '/hello',

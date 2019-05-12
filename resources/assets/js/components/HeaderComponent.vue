@@ -47,7 +47,7 @@
         <v-toolbar fixed>
             <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
             <router-link to="/" tag="span" style="cursor:pointer">
-                <v-toolbar-title v-text="'LAMZAK'"></v-toolbar-title>
+                <v-toolbar-title v-text="'LAMZAK'" class="animated infinite jackInTheBox delay-2s"></v-toolbar-title>
             </router-link>
 
             <v-spacer></v-spacer>
@@ -77,7 +77,7 @@
                                         left
                                 >
                                     <template>
-                                        <span>0</span>
+                                        <span></span>
                                     </template>
                                     <v-icon
                                             large
@@ -196,6 +196,11 @@
         computed: {
             menuItems() {
                 return [
+                    {
+                        icon: 'dashboard',
+                        title: 'Главная',
+                        route: 'home'
+                    },
                     {
                         icon: 'shopping_basket',
                         title: 'Товары',

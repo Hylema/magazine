@@ -27,6 +27,9 @@
     }
 </script>
 <style>
+    .application{
+        font-family: 'Podkova', sans-serif;
+    }
     .v-btn:active{
         outline: none !important;
     }
@@ -35,11 +38,6 @@
     }
     .v-menu__content{
         top:65px !important;
-    }
-    @media (max-width: 960px) {
-        .content{
-
-        }
     }
 
 </style>
